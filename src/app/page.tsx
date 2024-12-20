@@ -1,14 +1,23 @@
-import Hero from '@/customComponents/Hero'
-import Image from 'next/image'
+import EventBanner from '@/components/customComponents/EventBanner'
+import Footer from '@/components/customComponents/Footer'
+import Hero from '@/components/customComponents/Hero'
+import InvestersGrid from '@/components/customComponents/Investers'
+import Navbar from '@/components/customComponents/Navbar'
+import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
+
 
 export default function Home() {
   return (
    <>
 <div className='w-full h-full'>
+  <Navbar />
   <Hero />
+    <WhatIsSummer />
+    <InvestersGrid />
+    <EventBanner />
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
-  <h1>Man Behind Jazbaa</h1>
+  <h1>Man Behind Jazbaa</h1>  
   <h1>Jazbaa 1.0/2.0 (card with numbers)</h1>
   <h1>what is the box for jazbaa 3.0 (card with info graphics)</h1>
   <h1>50+ startup up to be  show in jazbaa 3.0 (card of every startup )</h1>
@@ -21,7 +30,8 @@ export default function Home() {
   <h1 className='font-bold'>New video testimonails section ( individual videos by investers)</h1>
   <h1 className='font-bold'>Pre jazbaa process (block format like insta post format )</h1>
   <h1 className='font-bold'>BrainStormings (meetings glimpse)</h1>
-</div>
+  </div>
+  <Footer />
    </>
   )
 }
