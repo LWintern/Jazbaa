@@ -24,8 +24,8 @@ export default function EventBanner() {
                 <span className="text-red-400"> THE INITIATIVE</span>
                 <span> THAT</span>
                 <br />
-                <span> MIGHT</span>
-                <span className="text-red-400"> CHANGE YOUR LIFE</span>
+                <span> TOOK</span>
+                <span className="text-red-400"> CHANGED THOUSANDS LIFE</span>
                 <br />
                 <span>FOREVER</span>
               </h2>

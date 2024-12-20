@@ -7,9 +7,12 @@ import Image from 'next/image'
 
 // Use absolute paths for images in the public folder
 const images = [
-  "/assets/mentor-with-VIPS/mentor-gallery-1.jpeg",
-  "/assets/mentor-with-VIPS/techie1.png",
-  "/assets/mentor-with-VIPS/techie2.png",
+  
+  
+  "/assets/HeroImages/hero1.png",
+  "/assets/HeroImages/hero2.png",
+  "/assets/HeroImages/hero3.png",
+  
 ]
 
 export default function HeroSection() {

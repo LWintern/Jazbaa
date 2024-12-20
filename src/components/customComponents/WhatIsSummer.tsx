@@ -12,7 +12,7 @@ export default function WhatIsSummer() {
           <div className="relative w-[70%] aspect-[12/8]  ml-20 rounded-3xl overflow-hidden">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/your_video_id"
+              src="https://www.youtube.com/embed/dqIsmWjbtfQ?si=JRgPBQsu4PIvUMpy/"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
