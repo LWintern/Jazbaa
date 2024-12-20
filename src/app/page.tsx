@@ -3,6 +3,7 @@ import Footer from '@/components/customComponents/Footer'
 import Hero from '@/components/customComponents/Hero'
 import InvestersGrid from '@/components/customComponents/Investers'
 import Navbar from '@/components/customComponents/Navbar'
+import RecapPreviousYear from '@/components/customComponents/RecapPreviousYear'
 import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
 
 
@@ -15,6 +16,7 @@ export default function Home() {
     <WhatIsSummer />
     <InvestersGrid />
     <EventBanner />
+    <RecapPreviousYear />
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
   <h1>Man Behind Jazbaa</h1>  
