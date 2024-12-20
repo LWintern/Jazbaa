@@ -1,14 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import Footer2 from './Footer2'
 
 export default function Footer() {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null)
 
-  return (
-    <div className="bg-black min-h-screen max-w-7xl mx-auto p-4 flex items-center justify-start ">
+  return ( 
+    <>
+    
+      <div className="bg-black py-12 max-w-7xl mx-auto px-4 flex items-center justify-start ">
+        
       <div className="text-center">
-        <h1 className=" text-[180px] leading-[0.85] font-bold tracking-tighter">
+        <h1 className=" text-[180px] leading-[0.85] font-bold tracking-tighter cursor-default"> 
           <span 
             className={`text-transparent transition-all duration-300 ${
               hoveredWord === 'THE' 
@@ -48,6 +52,7 @@ export default function Footer() {
         </h1>
       </div>
     </div>
+    </>
   )
 }
 

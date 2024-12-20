@@ -5,7 +5,7 @@ import { Play } from "lucide-react"
 
 export default function WhatIsSummer() {
   return (
-    <div className=" bg-[#FCFAF7] relative overflow-hidden">
+    <div className=" bg-white relative overflow-hidden">
       <div className="container mx-3/4 px-4 py-12  max-w-4xl">
         <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8 items-center">
           {/* Left Column - Video Section */}

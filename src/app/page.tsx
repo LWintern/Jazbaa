@@ -1,5 +1,6 @@
 import EventBanner from '@/components/customComponents/EventBanner'
 import Footer from '@/components/customComponents/Footer'
+import Footer2 from '@/components/customComponents/Footer2'
 import Hero from '@/components/customComponents/Hero'
 import InvestersGrid from '@/components/customComponents/Investers'
 import Navbar from '@/components/customComponents/Navbar'
@@ -33,6 +34,7 @@ export default function Home() {
   <h1 className='font-bold'>Pre jazbaa process (block format like insta post format )</h1>
   <h1 className='font-bold'>BrainStormings (meetings glimpse)</h1>
   </div>
+  <Footer2 />
   <Footer />
    </>
   )
