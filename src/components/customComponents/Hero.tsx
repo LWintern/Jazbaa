@@ -7,9 +7,9 @@ import Image from 'next/image'
 
 // Use absolute paths for images in the public folder
 const images = [
-  "/mentor-with-VIPS/mentor-gallery-1.jpeg",
-  "/mentor-with-VIPS/techie1.png",
-  "/mentor-with-VIPS/techie2.png",
+  "/assets/mentor-with-VIPS/mentor-gallery-1.jpeg",
+  "/assets/mentor-with-VIPS/techie1.png",
+  "/assets/mentor-with-VIPS/techie2.png",
 ]
 
 export default function HeroSection() {
@@ -51,9 +51,9 @@ export default function HeroSection() {
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-12 lg:px-24">
+      <div className="absolute inset-0 flex flex-col justify-center px-4 md:px-12 lg:px-8">
         <div className="max-w-4xl">
-          <h1 className="mb-2 text-4xl font-bold text-white md:text-6xl lg:text-7xl">
+          <h1 className="mb-2 text-4xl font-bold text-white md:text-6xl lg:text-5xl">
             Learn
             <br />
             Business By
@@ -84,7 +84,7 @@ export default function HeroSection() {
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button
               variant="outline"
-              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50"
+              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50 rounded-3xl p-6"
             >
               <Instagram className="h-4 w-4" />
               Connect With Us on Instagram
@@ -109,13 +109,13 @@ export default function HeroSection() {
         {/* Accreditation Logos */}
         <div className="absolute bottom-6 right-6 flex items-center gap-4">
           <Image
-            src="/mentor-with-VIPS/mentor-gallery-1.jpeg"
-            alt="EFMD Global Member"
+            src="/assets/hash13whitelogo.png"
+            alt="hash13logo"
             width={48}
             height={48}
           />
           <Image
-            src="/mentor-with-VIPS/mentor-gallery-2.jpeg"
+            src="/assets/LW-white.png"
             alt="AACSB Member"
             width={48}
             height={48}
