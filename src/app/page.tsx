@@ -4,12 +4,12 @@ import Hero from '@/components/customComponents/Hero'
 import InvestersGrid from '@/components/customComponents/Investers'
 import Navbar from '@/components/customComponents/Navbar'
 import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
-
-
+import GalleryIndex from '@/components/customComponents/gallery/GalleryIndex'
+import About from '@/components/customComponents/about/About'
 export default function Home() {
   return (
    <>
-<div className='w-full h-full'>
+<div className='w-full h-full space-x-4'>
   <Navbar />
   <Hero />
     <WhatIsSummer />
@@ -23,8 +23,10 @@ export default function Home() {
   <h1>50+ startup up to be  show in jazbaa 3.0 (card of every startup )</h1>
   <h1>Investers (card of every investers)</h1>
   <h1>Insta frame photos</h1>
-  <h1>Event Gallery</h1>
-  <h1>About Linux world</h1>
+  <GalleryIndex/>
+  {/* <h1>Event Gallery</h1> */}
+  {/* <h1>About Linux world</h1> */}
+  <About></About>
   <h1>Our Initiatives</h1>
   <h1>Footer</h1>
   <h1 className='font-bold'>New video testimonails section ( individual videos by investers)</h1>
