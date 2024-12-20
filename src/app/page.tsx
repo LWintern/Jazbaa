@@ -18,6 +18,7 @@ export default function Home() {
     <InvestersGrid />
     <EventBanner />
     <RecapPreviousYear />
+    
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
   <h1>Man Behind Jazbaa</h1>  
