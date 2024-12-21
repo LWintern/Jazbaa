@@ -7,7 +7,7 @@ const GalleryIndex = ()=>{
 
     return (
         <>
-            <div className="p-8 bg-[#EBF5FF] space-y-4 ">
+            <div className="p-8 bg-[#EBF5FF] space-y-4  ">
                 <Gallery></Gallery>
                 <Gallery2></Gallery2>
                 <Gallery3></Gallery3>

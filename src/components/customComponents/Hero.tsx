@@ -184,7 +184,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-center px-4 md:px-12 lg:px-8">
+      <div className="absolute mx-auto max-w-7xl inset-0 flex flex-col justify-center px-4 md:px-12 lg:px-8">
         <div className="max-w-4xl">
           <h1 className="mb-2 text-4xl font-bold text-white md:text-6xl lg:text-5xl">
             Learn

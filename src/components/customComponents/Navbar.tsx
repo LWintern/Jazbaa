@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
   return (
     <header
       className={cn(
-        " top-0 z-50 w-full bg-black transition-colors duration-300 ",
+        " top-0 z-50 w-full bg-black transition-colors duration-300 overflow-hidden",
         scrolled ? "bg-black " : "bg-black"
       )}
     >

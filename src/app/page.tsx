@@ -11,7 +11,7 @@ import About from '@/components/customComponents/about/About'
 export default function Home() {
   return (
    <>
-<div className='w-full h-full space-x-4'>
+<div className='w-full h-full mx-auto'>
   <Navbar />
   <Hero />
     <WhatIsSummer />

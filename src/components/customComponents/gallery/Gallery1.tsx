@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function Gallery() {
   return (
     <>
-  <Card className="relative overflow-hidden group/card transition-all duration-500 ease-out hover:bg-black bg-white h-[280px]">
+  <Card className="relative overflow-hidden mx-auto group/card transition-all duration-500 ease-out hover:bg-black bg-white h-[280px]">
       <div className="flex items-center h-full p-12 relative z-10">
         {/* Left side - CREATE BETTER CONTENT */}
         <div className="w-1/3">

@@ -11,8 +11,8 @@ export default function Footer() {
   const [hoveredWord, setHoveredWord] = useState<string | null>(null)
 
   return ( 
-    <>
-      <div className="bg-black py-6 md:py-8 lg:py-12 max-w-7xl mx-auto px-4 flex items-center justify-start">
+    <div className='bg-black'>
+      <div className=" py-6 md:py-8 lg:py-12 max-w-7xl mx-auto px-4 flex items-center justify-start">
         <div className="text-center w-full">
           <h1 className="text-[40px] sm:text-[80px] md:text-[120px] lg:text-[180px] leading-[0.85] font-bold tracking-tighter cursor-default"> 
             <span 
@@ -54,6 +54,6 @@ export default function Footer() {
           </h1>
         </div>
       </div>
-    </>
+    </div>
   )
 }

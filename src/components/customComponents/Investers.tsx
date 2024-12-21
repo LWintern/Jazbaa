@@ -104,6 +104,7 @@ const speakers: Invester[] = [
 
 export default function InvestersGrid() {
   return (
+    <div className="">
     <div className="container mx-auto px-4 py-12 max-w-6xl">
       <h1 className="text-2xl md:text-3xl font-bold text-center mb-4">
         SUMMER PROGRAM 2023 SPEAKERS
@@ -152,6 +153,7 @@ export default function InvestersGrid() {
           </Card>
         ))}
       </div>
+    </div>
     </div>
   )
 }
