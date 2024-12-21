@@ -1,9 +1,11 @@
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@/components/ui/breadcrumb"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
-
+import Jazbaa1 from "./Jazbaa1"
+import Jazbaa2 from "./Jazbaa2"
 export default function Jazbaa() {
   return (
-    <div className="w-full max-w-6xl mx-auto px-4">
+    <div className="w-full max-w-6xl mx-auto px-4 space-y-2">
+        <div>
       <Breadcrumb className="mb-6">
         <BreadcrumbItem>
           <BreadcrumbLink href="#" className="text-sm text-muted-foreground hover:text-foreground">
@@ -40,6 +42,11 @@ export default function Jazbaa() {
           </TabsTrigger>
         </TabsList>
       </Tabs>
+      </div>
+      <div>
+      <Jazbaa1 />
+      <Jazbaa2 />
+      </div>
     </div>
   )
 }
