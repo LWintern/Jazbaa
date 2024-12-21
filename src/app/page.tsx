@@ -8,6 +8,7 @@ import RecapPreviousYear from '@/components/customComponents/RecapPreviousYear'
 import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
 import GalleryIndex from '@/components/customComponents/gallery/GalleryIndex'
 import About from '@/components/customComponents/about/About'
+import Jazbaa from '@/components/customComponents/jazbaa/Jazbaa'
 export default function Home() {
   return (
    <>
@@ -22,7 +23,8 @@ export default function Home() {
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
   <h1>Man Behind Jazbaa</h1>  
-  <h1>Jazbaa 1.0/2.0 (card with numbers)</h1>
+  {/* <h1>Jazbaa 1.0/2.0 (card with numbers)</h1> */}
+  <Jazbaa></Jazbaa>
   <h1>what is the box for jazbaa 3.0 (card with info graphics)</h1>
   <h1>50+ startup up to be  show in jazbaa 3.0 (card of every startup )</h1>
   <h1>Investers (card of every investers)</h1>
