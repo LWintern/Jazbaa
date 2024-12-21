@@ -1,3 +1,5 @@
+
+
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -5,11 +7,11 @@ import { Play } from "lucide-react"
 
 export default function WhatIsSummer() {
   return (
-    <div className=" bg-white relative overflow-hidden">
-      <div className="container mx-3/4 px-4 py-12  max-w-4xl">
-        <div className="grid lg:grid-cols-[1.2fr,1fr] gap-8 items-center">
+    <div className="bg-white relative overflow-hidden "> {/* Added min-height for reference */}
+      <div className="container mx-auto   py-12 max-w-6xl">
+        <div className="grid lg:grid-cols-[1.8fr,2fr]  items-center p-4 sm:ml-28">
           {/* Left Column - Video Section */}
-          <div className="relative w-[70%] aspect-[12/8]  ml-20 rounded-3xl overflow-hidden">
+          <div className="relative md:w-[80%] aspect-[12/8]  rounded-3xl overflow-hidden">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/dqIsmWjbtfQ?si=JRgPBQsu4PIvUMpy/"
@@ -22,7 +24,7 @@ export default function WhatIsSummer() {
           </div>
 
           {/* Right Column - Content Section */}
-          <div className="space-y-2 z-10">
+          <div className="space-y-2 z-10 ">
             <h1 className="text-3xl font-black leading-tight tracking-tight">
               WHAT IS
               <br />
@@ -66,18 +68,19 @@ export default function WhatIsSummer() {
       </div>
 
       {/* Right Side Image */}
-
       <div
-  className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none"
-  style={{ width: "30%", height: "100%" }} // Adjust width and height here
->
-  <img
-    src="https://cdn.prod.website-files.com/63d3b7e8aa21f4cead659fa8/65997b3c8b0931a1a3ff8169_about-image-2.png"
-    alt="People enjoying the summit"
-    className="w-full h-full object-cover object-left"
-  />
-</div>
-
+        className="absolute right-0 bottom-0 pointer-events-none"
+        style={{
+          width: "cover",
+          height: "60%",
+        }}
+      >
+        <img
+          src="https://cdn.prod.website-files.com/63d3b7e8aa21f4cead659fa8/65997b3c8b0931a1a3ff8169_about-image-2.png"
+          alt="People enjoying the summit"
+          className="w-full h-full object-contain object-bottom"
+        />
+      </div>
 
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-1/4 h-full bg-gradient-to-r from-black to-transparent opacity-10" />
