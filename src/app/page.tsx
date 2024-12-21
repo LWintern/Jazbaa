@@ -10,6 +10,7 @@ import GalleryIndex from '@/components/customComponents/gallery/GalleryIndex'
 import About from '@/components/customComponents/about/About'
 import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
+import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
 export default function Home() {
   return (
    <>
@@ -22,6 +23,7 @@ export default function Home() {
     <RecapPreviousYear />
     <InitiativesSection />
     <JazbaaStats />
+    <IndustryExpertSpeech />
     
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
@@ -37,7 +39,7 @@ export default function Home() {
   <About></About>
   
   
-  <h1 className='font-bold'>New video testimonails section ( individual videos by investers)</h1>
+  
   <h1 className='font-bold'>Pre jazbaa process (block format like insta post format )</h1>
   <h1 className='font-bold'>BrainStormings (meetings glimpse)</h1>
   </div>
