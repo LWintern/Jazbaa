@@ -9,6 +9,7 @@ import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
 import GalleryIndex from '@/components/customComponents/gallery/GalleryIndex'
 import About from '@/components/customComponents/about/About'
 import Jazbaa from '@/components/customComponents/jazbaa/Jazbaa'
+import InitiativesSection from '@/components/customComponents/Initiatives'
 export default function Home() {
   return (
    <>
@@ -19,6 +20,7 @@ export default function Home() {
     <InvestersGrid />
     <EventBanner />
     <RecapPreviousYear />
+    <InitiativesSection />
     
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
