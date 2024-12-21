@@ -9,9 +9,9 @@ export default function WhatIsSummer() {
   return (
     <div className="bg-white relative overflow-hidden "> {/* Added min-height for reference */}
       <div className="container mx-auto   py-12 max-w-6xl">
-        <div className="grid lg:grid-cols-[1.8fr,2fr]  items-center p-4 sm:ml-28">
+        <div className="grid lg:grid-cols-[1.8fr,2fr]  items-center  sm:ml-28">
           {/* Left Column - Video Section */}
-          <div className="relative md:w-[80%] aspect-[12/8]  rounded-3xl overflow-hidden">
+          <div className="relative md:w-[80%] aspect-[12/8]   md:rounded-3xl lg:rounded-3xl overflow-hidden">
             <iframe
               className="w-full h-full"
               src="https://www.youtube.com/embed/dqIsmWjbtfQ?si=JRgPBQsu4PIvUMpy/"
@@ -24,14 +24,14 @@ export default function WhatIsSummer() {
           </div>
 
           {/* Right Column - Content Section */}
-          <div className="space-y-2 z-10 ">
+          <div className="space-y-2 z-10 md:px-0 px-4 md:pt-4 pt-4 ">
             <h1 className="text-3xl font-black leading-tight tracking-tight">
               WHAT IS
               <br />
-              SUMMER PROGRAM?
+              JAZBAA EVENT?
             </h1>
 
-            <p className="text-md">Summer Programis the ultimate place to</p>
+            <p className="text-md text-gray-400">JAZBAA Event is the ultimate place to</p>
 
             <div className="space-y-4">
               <div className="text-md font-bold">1. FIND YOUR NEXT BUSINESS PARTNER</div>

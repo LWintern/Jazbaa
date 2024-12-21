@@ -9,6 +9,7 @@ import WhatIsSummer from "@/components/customComponents/WhatIsSummer"
 import GalleryIndex from '@/components/customComponents/gallery/GalleryIndex'
 import About from '@/components/customComponents/about/About'
 import InitiativesSection from '@/components/customComponents/Initiatives'
+import JazbaaStats from '@/components/customComponents/JazbaaStats'
 export default function Home() {
   return (
    <>
@@ -20,6 +21,7 @@ export default function Home() {
     <EventBanner />
     <RecapPreviousYear />
     <InitiativesSection />
+    <JazbaaStats />
     
   <h1>Taking jazbaa to national level</h1>
   <h1>show photos with VIP</h1>
@@ -27,14 +29,14 @@ export default function Home() {
   <h1>Jazbaa 1.0/2.0 (card with numbers)</h1>
   <h1>what is the box for jazbaa 3.0 (card with info graphics)</h1>
   <h1>50+ startup up to be  show in jazbaa 3.0 (card of every startup )</h1>
-  <h1>Investers (card of every investers)</h1>
+  
   <h1>Insta frame photos</h1>
   <GalleryIndex/>
   {/* <h1>Event Gallery</h1> */}
   {/* <h1>About Linux world</h1> */}
   <About></About>
-  <h1>Our Initiatives</h1>
-  <h1>Footer</h1>
+  
+  
   <h1 className='font-bold'>New video testimonails section ( individual videos by investers)</h1>
   <h1 className='font-bold'>Pre jazbaa process (block format like insta post format )</h1>
   <h1 className='font-bold'>BrainStormings (meetings glimpse)</h1>

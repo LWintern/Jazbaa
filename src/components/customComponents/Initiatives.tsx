@@ -102,13 +102,13 @@ const initiativesData = [
           {initiativesData.map((initiative, index) => (
             <div 
               key={initiative.id}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${
-                index % 2 === 0 ? '' : 'lg:flex-row-reverse'
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 bg-red-50 rounded-xl p-4  ${
+                index % 2 === 0 ? '' : 'lg:flex-row-reverse  '
               }`}
             >
               {/* Images Section */}
-              <div className={`space-y-4 ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                <div className="relative h-[120px] w-full rounded-lg overflow-hidden">
+              <div className={`space-y-4 ${index % 2 === 1 ? 'lg:order-2 ' : ''}`}>
+                <div className="relative h-[120px] w-full rounded-lg overflow-hidden ">
                   <Image
                     src={initiative.images.main}
                     alt={`${initiative.title} Main Image`}
@@ -117,9 +117,9 @@ const initiativesData = [
                   />
                 </div>
   
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4 ">
                   {initiative.images.secondary.map((img, imgIndex) => (
-                    <div key={imgIndex} className="relative h-[120px] rounded-lg overflow-hidden">
+                    <div key={imgIndex} className="relative h-[120px] rounded-lg overflow-hidden ">
                       <Image
                         src={img}
                         alt={`${initiative.title} Secondary Image ${imgIndex + 1}`}
