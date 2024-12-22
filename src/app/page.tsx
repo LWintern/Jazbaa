@@ -14,6 +14,7 @@ import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
 import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
+import { ManBehindJazbaa } from '@/components/customComponents/ManBehindJazbaa'
 export default function Home() {
   return (
    <>
@@ -21,6 +22,7 @@ export default function Home() {
   <Navbar />
   <Hero />
   <StartupsGallery />
+  <ManBehindJazbaa />
   {/* <ThreeDCardDemo /> */}
     <WhatIsSummer />
     <InvestersGrid />
