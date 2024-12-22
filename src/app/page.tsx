@@ -13,13 +13,10 @@ import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
-<<<<<<< HEAD
 import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { WithVIP } from '@/components/customComponents/WithVIP/WithVip'
-=======
 import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
 import { ManBehindJazbaa } from '@/components/customComponents/ManBehindJazbaa'
->>>>>>> 82f74255145a4f413bc8ec6f789613bf68e96253
 export default function Home() {
   return (
    <>
