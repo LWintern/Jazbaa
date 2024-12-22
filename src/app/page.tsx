@@ -12,6 +12,7 @@ import Jazbaa from '@/components/customComponents/jazbaa/Jazbaa'
 import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
+import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
 export default function Home() {
   return (
    <>
@@ -39,6 +40,7 @@ export default function Home() {
   {/* <h1>Event Gallery</h1> */}
   {/* <h1>About Linux world</h1> */}
   <About></About>
+  <JazbaaTimeline></JazbaaTimeline>
   
   
   
