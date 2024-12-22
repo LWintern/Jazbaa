@@ -9,7 +9,7 @@ export function JazbaaTimeline() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Built and launched Startup from scratch
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -94,7 +94,7 @@ export function JazbaaTimeline() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+            Deployed 5 new startup on Jazbaa today
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">

@@ -9,6 +9,7 @@ export default function VisionMission() {
   return (
     <div className={`max-w-full mx-auto p-6  ${activeTab==='Present' ? 'bg-white' : 'bg-black'}`}>
       {/* Tab Toggle */}
+      <div className='max-w-6xl mx-auto'>
       <div className="inline-flex rounded-full p-1 bg-gradient-to-r from-[#5CD4CC] via-[#FFD66B] to-[#FF9051]">
         <button
           onClick={() => setActiveTab('Present')}
@@ -122,6 +123,7 @@ nation. Soon Indians to be known as
             </div>
           </div>
         )}
+      </div>
       </div>
     </div>
   )

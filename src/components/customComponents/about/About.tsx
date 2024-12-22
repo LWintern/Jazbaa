@@ -11,15 +11,18 @@ export default function About() {
 
   return (
     <>
-    <div className="min-h-screen bg-black text-white p-6">
+  <div className="min-h-full bg-black text-white p-6">
       <div className="max-w-6xl mx-auto">
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-12">
-        
-        ABOUT LINUXWORLD
-          <br />
-          INFORMATICS PVT LTD
-        </h1>
+        <div className="mb-12">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            About
+            <div className="relative">
+              Linux World
+              <div className="absolute -bottom-2 left-0 w-32 h-1 bg-cyan-400"></div>
+            </div>
+          </h1>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Left Column - Video Card */}
@@ -29,11 +32,11 @@ export default function About() {
           >
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="/assets/mentor-with-VIPS/techie1.png"
+                src="/assets/mentor-with-VIPS/techie2.png"
                 alt="Masters' Union Video Thumbnail"
                 className="w-full object-cover"
               />
-              <div className="absolute inset-0 bg-yellow-500/90 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-orange-500/80 mix-blend-multiply" />
               
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
@@ -44,10 +47,10 @@ export default function About() {
 
               {/* Text Overlay */}
               <div className="absolute bottom-6 left-6">
-                <p className="text-white text-xl mb-2">Masters' Union In</p>
-                <div className="text-4xl font-bold">
-                  <span className="text-cyan-400">3</span>{" "}
-                  <span className="text-emerald-400">Minutes</span>
+                <p className="text-white text-xl font-light mb-2">Linux World In</p>
+                <div className="flex items-center gap-2 text-4xl font-bold">
+                  <span className="text-cyan-400">3</span>
+                  <span className="text-green-400">Minutes</span>
                 </div>
               </div>
             </div>
@@ -57,10 +60,10 @@ export default function About() {
           <div className="flex flex-col gap-8">
             {/* Goal Card */}
             <div className="flex justify-end">
-              <Card className="w-64 bg-zinc-900/50 border-zinc-800 backdrop-blur">
+              <Card className="w-64 bg-zinc-900/30 border border-yellow-500/20 rounded-3xl backdrop-blur">
                 <CardContent className="p-6">
                   <h2 className="text-2xl font-bold mb-2">
-                    Goal <span className="text-yellow-500">2030</span>
+                    Goal <span className="text-yellow-500">2024</span>
                   </h2>
                   <p className="text-gray-400">
                     Reach Global Top 10 Ranking
@@ -70,13 +73,8 @@ export default function About() {
             </div>
 
             {/* Description */}
-            <p className="text-white text-lg">
- 
- #1 Awarded Best Summer Internship Award{" "}
-              <span className="text-white">consecutively for the Last 3 Year</span>
-              {/* . Through collaboration of industry experts and academic leaders, we aim to
-              revolutionise business education with a tech-centric and industry-driven
-              approach. */}
+            <p className="text-lg text-gray-300">
+              At Masters' Union, we believe in <span className="text-white font-medium">learning business by doing business</span>. Through collaboration of industry experts and academic leaders, we aim to revolutionise business education with a tech-centric and industry-driven approach.
             </p>
           </div>
         </div>

@@ -13,6 +13,8 @@ import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
+import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
+import { WithVIP } from '@/components/customComponents/WithVIP/WithVip'
 export default function Home() {
   return (
    <>
@@ -27,9 +29,10 @@ export default function Home() {
     <InitiativesSection />
     <JazbaaStats />
     <IndustryExpertSpeech />
-    
+    <Glimps />
   <h1>Taking jazbaa to national level</h1>
-  <h1>show photos with VIP</h1>
+  {/* <h1>show photos with VIP</h1> */}
+  <WithVIP />
   <h1>Man Behind Jazbaa</h1>  
   {/* <h1>Jazbaa 1.0/2.0 (card with numbers)</h1> */}
   <Jazbaa></Jazbaa>

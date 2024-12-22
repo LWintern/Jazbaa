@@ -8,6 +8,10 @@ const nextConfig = {
               hostname: 'assets.aceternity.com',
               
             },
+            {
+              protocol: 'https',
+              hostname: 'pbs.twimg.com',
+            }
           ],
     }
 
