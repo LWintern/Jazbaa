@@ -12,12 +12,14 @@ import Jazbaa from '@/components/customComponents/jazbaa/Jazbaa'
 import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
+import { ThreeDCardDemo } from '@/components/customComponents/3DCardDemo'
 export default function Home() {
   return (
    <>
 <div className='w-full h-full mx-auto'>
   <Navbar />
   <Hero />
+  {/* <ThreeDCardDemo /> */}
     <WhatIsSummer />
     <InvestersGrid />
     <EventBanner />
