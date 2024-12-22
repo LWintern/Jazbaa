@@ -13,12 +13,14 @@ import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
+import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
 export default function Home() {
   return (
    <>
 <div className='w-full h-full mx-auto'>
   <Navbar />
   <Hero />
+  <StartupsGallery />
   {/* <ThreeDCardDemo /> */}
     <WhatIsSummer />
     <InvestersGrid />
