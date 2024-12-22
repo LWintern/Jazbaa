@@ -12,11 +12,7 @@ import Jazbaa from '@/components/customComponents/jazbaa/Jazbaa'
 import InitiativesSection from '@/components/customComponents/Initiatives'
 import JazbaaStats from '@/components/customComponents/JazbaaStats'
 import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSpeech'
-<<<<<<< HEAD
-import { ThreeDCardDemo } from '@/components/customComponents/3DCardDemo'
-=======
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
->>>>>>> 22dbdf2d087ac760794fb6ff73f34cb3f4a284b4
 export default function Home() {
   return (
    <>
