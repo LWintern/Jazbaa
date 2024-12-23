@@ -17,6 +17,7 @@ import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { JazbaaGallery} from '@/components/customComponents/WithVIP/WithVip'
 import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
+import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 export default function Home() {
   return (
    <>
@@ -37,6 +38,8 @@ export default function Home() {
 
     <JazbaaGallery/>
   
+  {/* <h1>Insta frame photos</h1> */}
+  <PreJazbaa></PreJazbaa>
  
   <Jazbaa></Jazbaa>
   
