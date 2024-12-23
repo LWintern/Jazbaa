@@ -25,31 +25,6 @@ export default function Jazbaa() {
           Explore Innovative Business Ideas
         </h1>
 
-<<<<<<< HEAD
-      <Tabs defaultValue="creator" className="w-full">
-        <TabsList className="w-full h-14 bg-black rounded-lg grid grid-cols-3 p-1">
-          
-            <Button onClick={() => setActiveTab('Inclusivity')} className={activeTab === 'Inclusivity' ? 'text-[#ff0000]' : 'text-white'}>Inclusivity</Button>
-            
-          
-       
-            <Button onClick={() => setActiveTab('Sustainability')} className={activeTab === 'Sustainability' ? 'text-[#ff0000]' : 'text-white'}>Sustainability</Button>
-            {/* Creator Challenge */}
-            {/* Glow effect for active state */}
-            <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent blur-xl data-[state=inactive]:opacity-0 transition-opacity" />
-         
-        
-            Dropshipping Challenge
-          
-        </TabsList>
-      </Tabs>
-      </div>
-      <div>
-        {activeTab === 'Inclusivity' ?(<Jazbaa1 /> ) :(<Jazbaa2 />)}
-        {/* {activeTab === 'Sustainability' && <Jazbaa2 />} */}
-      {/* <Jazbaa1 />
-      <Jazbaa2 /> */}
-=======
         <Tabs defaultValue="creator" className="w-full">
           <TabsList className="w-full h-44 md:h-14 bg-black rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-1 gap-2">
             <TabsTrigger
@@ -74,10 +49,12 @@ export default function Jazbaa() {
           </TabsList>
         </Tabs>
       </div>
-      <div>
-        {activeTab === 'Inclusivity' ? <Jazbaa1 /> : <Jazbaa2 />}
->>>>>>> 597047e305d9c4f2b991bb3f5ce1dab7d61eb35c
-      </div>
-    </div>
+   <div>
+    
+    {activeTab === 'Inclusivity' ? <Jazbaa1 /> : <Jazbaa2 />}
+   
+   </div>
+   </div>
+   
   );
 }
