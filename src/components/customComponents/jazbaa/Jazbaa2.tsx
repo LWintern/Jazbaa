@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function Jazbaa2() {
   return (
-    <section className="bg-[#111111] text-white min-h-full">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 px-6 py-12 md:py-16">
+    <section className="bg-gray-200 text-black max-w-5xl mx-auto rounded-xl">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 md:px-8 px-4 py-12 md:py-16">
         {/* Left Column */}
         <div className="space-y-8">
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-[#B98D3B]/30">
@@ -16,7 +16,7 @@ export default function Jazbaa2() {
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">Sustainability</h2>
             
-            <p className="text-gray-400 text-base md:text-lg leading-relaxed max-w-md">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed max-w-md">
               Discover sustainable excellence in our LEED Platinum building. Enjoy fresh air with MERV 14 filtration, abundant natural daylight, and experience optimized space for maximum productivity and comfort.
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function Jazbaa2() {
                     <path d={item.svgPath} stroke="#B98D3B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium text-white">
+                <h3 className="text-lg font-medium text-black">
                   {item.text}
                 </h3>
               </div>

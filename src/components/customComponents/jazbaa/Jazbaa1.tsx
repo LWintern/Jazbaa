@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Jazbaa1() {
   return (
-    <div className="bg-black w-full text-white ">
-      <div className="container mx-auto md:px-4 px-0 py-12 max-w-6xl">
+    <div className="bg-gray-200 text-black max-w-5xl rounded-xl mx-auto">
+      <div className="container mx-auto md:px-8 px-0 py-12  ">
         {/* Header */}
         <div className="mb-16">
           <div className="flex items-center gap-2 text-gray-400 mb-4">
@@ -26,7 +26,7 @@ export default function Jazbaa1() {
             <div className="space-y-8 md:space-y-12">
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-4xl font-semibold">Inclusivity</h2>
-                <p className="text-gray-400 leading-relaxed text-base md:text-lg">
+                <p className="text-gray-100 leading-relaxed text-base md:text-lg">
                   At Masters' Union, we celebrate diversity with a strong representation of female
                   students and employees. Inclusivity is at the heart of our community, and we create a
                   supportive and dynamic learning environment for everyone.
@@ -39,37 +39,37 @@ export default function Jazbaa1() {
                 <div className="absolute top-0 bottom-0 left-1/2 w-px bg-gray-800"></div>
                 
                 <div>
-                  <h3 className="text-lg md:text-xl font-medium mb-4 md:mb-6">Student</h3>
+                  <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Student</h3>
                   <div className="space-y-4 md:space-y-6">
                     <div>
                       <div className="text-4xl md:text-5xl font-bold tracking-tight">
-                        61.3<span className="text-yellow-400">%</span>
+                        61.3<span className="text-[#ff0000]">%</span>
                       </div>
-                      <div className="text-gray-400 mt-1">Male</div>
+                      <div className="text-gray-100 mt-1">Male</div>
                     </div>
                     <div>
                       <div className="text-4xl md:text-5xl font-bold tracking-tight">
-                        38.7<span className="text-yellow-400">%</span>
+                        38.7<span className="text-[#ff0000]">%</span>
                       </div>
-                      <div className="text-gray-400 mt-1">Female</div>
+                      <div className="text-gray-100 mt-1">Female</div>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h3 className="text-lg md:text-xl font-medium mb-4 md:mb-6">Employee</h3>
+                  <h3 className="text-lg md:text-xl font-bold mb-4 md:mb-6">Employee</h3>
                   <div className="space-y-4 md:space-y-6">
                     <div>
                       <div className="text-4xl md:text-5xl font-bold tracking-tight">
-                        48<span className="text-yellow-400">%</span>
+                        48<span className="text-[#ff0000]">%</span>
                       </div>
-                      <div className="text-gray-400 mt-1">Male</div>
+                      <div className="text-gray-100 mt-1">Male</div>
                     </div>
                     <div>
                       <div className="text-4xl md:text-5xl font-bold tracking-tight">
-                        52<span className="text-yellow-400">%</span>
+                        52<span className="text-[#ff0000]">%</span>
                       </div>
-                      <div className="text-gray-400 mt-1">Female</div>
+                      <div className="text-gray-100 mt-1">Female</div>
                     </div>
                   </div>
                 </div>
