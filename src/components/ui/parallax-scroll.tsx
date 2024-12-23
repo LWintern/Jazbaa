@@ -29,6 +29,18 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
+    <div className="max-w-6xl mx-auto px-4 py-12">
+    {/* Added Title Section */}
+    <div className="mb-12">
+      <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+        <span className="relative inline-block">
+          <span className="text-[#ff0000]">Jazbaa</span> Photos
+          <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#ff0000]"></div>
+        </span>
+      </h1>
+    </div>
+
+    
     <div
       className={cn("h-[40rem] items-start overflow-y-auto w-full", className)}
       ref={gridRef}
@@ -80,6 +92,7 @@ export const ParallaxScroll = ({
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
