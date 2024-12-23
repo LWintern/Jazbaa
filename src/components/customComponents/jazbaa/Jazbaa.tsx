@@ -11,7 +11,7 @@ export default function Jazbaa() {
   const [activeTab, setActiveTab] = useState<string>('Inclusivity');
 
   return (
-    <div className="w-full w-full mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+    <div className={`w-full  mx-auto ${activeTab==="Dropshipping Challenge"?"bg-white":"bg-black"}bg-black px-4 sm:px-6 lg:px-8 space-y-6`}>
       <div className="max-w-6xl mx-auto">
         <Breadcrumb className="mb-6">
           <BreadcrumbItem>

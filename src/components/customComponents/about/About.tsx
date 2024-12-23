@@ -15,7 +15,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto">
         {/* Main Heading */}
         <div className="mb-12">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-1xl md:text-3xl font-bold leading-tight">
             About
             <div className="relative">
               Linux World
@@ -73,7 +73,7 @@ export default function About() {
             </div>
 
             {/* Description */}
-            <p className="text-lg text-gray-300">
+            <p className="text-md text-gray-300">
               At Masters' Union, we believe in <span className="text-white font-medium">learning business by doing business</span>. Through collaboration of industry experts and academic leaders, we aim to revolutionise business education with a tech-centric and industry-driven approach.
             </p>
           </div>

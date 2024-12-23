@@ -38,16 +38,16 @@ export default function VisionMission() {
         {activeTab === 'Present' ? (
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold leading-tight">
+              <h2 className="text-3xl  leading-tight">
               Transforming Engineers into the Tech-
 nology Creators by developing an entre-
 preneurial mindset and inculating tech-
 nical competencies to innovate and pro-
 duce 
 {' '}
-                <span className="font-black">products accepted globally</span>
+                <span className="">products accepted globally</span>
               </h2>
-              <p className="text-gray-600">"Why" Linux World Exists</p>
+              <p className="text-gray-600 font-bold">"Why" Linux World Exists</p>
             </div>
             <div className="space-y-6">
               <Image
