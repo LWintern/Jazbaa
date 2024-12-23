@@ -24,33 +24,24 @@ export default function Jazbaa() {
 
       <Tabs defaultValue="creator" className="w-full">
         <TabsList className="w-full h-14 bg-black rounded-lg grid grid-cols-3 p-1">
-          <TabsTrigger 
-            value="vip" 
-            className="data-[state=active]:bg-transparent data-[state=active]:text-white text-gray-400 h-12"
-          >
-            <Button onClick={() => setActiveTab('Inclusivity')}>Inclusivity</Button>
+          
+            <Button onClick={() => setActiveTab('Inclusivity')} className={activeTab === 'Inclusivity' ? 'text-[#ff0000]' : 'text-white'}>Inclusivity</Button>
             
-          </TabsTrigger>
-          <TabsTrigger 
-            value="creator" 
-            className="relative data-[state=active]:bg-transparent data-[state=active]:text-white text-gray-400 h-12"
-          >
-            <Button onClick={() => setActiveTab('Sustainability')}>Sustainability</Button>
+          
+       
+            <Button onClick={() => setActiveTab('Sustainability')} className={activeTab === 'Sustainability' ? 'text-[#ff0000]' : 'text-white'}>Sustainability</Button>
             {/* Creator Challenge */}
             {/* Glow effect for active state */}
             <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent blur-xl data-[state=inactive]:opacity-0 transition-opacity" />
-          </TabsTrigger>
-          <TabsTrigger 
-            value="dropshipping" 
-            className="data-[state=active]:bg-transparent data-[state=active]:text-white text-gray-400 h-12"
-          >
+         
+        
             Dropshipping Challenge
-          </TabsTrigger>
+          
         </TabsList>
       </Tabs>
       </div>
       <div>
-        {activeTab === 'Inclusivity' ? <Jazbaa1 /> : <Jazbaa2 />}
+        {activeTab === 'Inclusivity' ?(<Jazbaa1 /> ) :(<Jazbaa2 />)}
         {/* {activeTab === 'Sustainability' && <Jazbaa2 />} */}
       {/* <Jazbaa1 />
       <Jazbaa2 /> */}
