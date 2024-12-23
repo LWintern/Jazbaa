@@ -14,7 +14,21 @@ import Image from "next/image";
 
 export function Glimps() {
   return (
-    <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[20rem]">
+    
+    <div className="max-w-6xl mx-auto px-4 py-12">
+    {/* Added Title Section */}
+    <div className="mb-12">
+      <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+        Glimpse of{" "}
+        <span className="relative inline-block">
+          <span className="text-[#ff0000]">Jazbaa</span> Events
+          <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#ff0000]"></div>
+        </span>
+      </h1>
+    </div>
+    
+    <BentoGrid className=" max-w-6xl mx-auto md:auto-rows-[20rem]">
+      
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -26,6 +40,8 @@ export function Glimps() {
         />
       ))}
     </BentoGrid>
+    </div>
+    
   );
 }
 
@@ -264,6 +280,7 @@ const SkeletonFive = () => {
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 flex-shrink-0" />
       </motion.div>
     </motion.div>
+    
   );
 };
 const items = [

@@ -1,7 +1,7 @@
 "use client";
 import { ParallaxScroll } from "../../ui/parallax-scroll";
 
-export function WithVIP() {
+export function JazbaaGallery() {
   return <ParallaxScroll images={images} />;
 }
 
