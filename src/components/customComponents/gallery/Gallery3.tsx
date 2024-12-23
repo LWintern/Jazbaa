@@ -37,7 +37,7 @@ export default function Gallery3() {
          
                  {/* Right side content - Added transform and transition */}
                  <div className="w-2/3 pl-8 relative z-1 transition-transform duration-500 ease-out transform group-hover/card:translate-x-28">
-                   <p className="text-md leading-relaxed text-black group-hover/card:text-white transition-colors duration-500">
+                   <p className="text-md leading-relaxed text-black group-hover/card:text-white transition-colors   duration-500">
                      Understand Your Audience • Content Strategy • Storytelling • Copy 
                      writing • Editing • Shooting • Community Building • Influencer 
                      Collaboration • Podcasting Skills • Creativity Techniques • Self 

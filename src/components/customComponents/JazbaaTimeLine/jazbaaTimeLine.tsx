@@ -5,7 +5,7 @@ import { Timeline } from "@/components/ui/timeline";
 export function JazbaaTimeline() {
   const data = [
     {
-      title: "2024",
+      title: "Jazbaa 1.O",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -45,7 +45,7 @@ export function JazbaaTimeline() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Jazbaa 2.O",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -90,7 +90,7 @@ export function JazbaaTimeline() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Jazbaa 3.O",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
@@ -148,7 +148,7 @@ export function JazbaaTimeline() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="max-w-6xl mx-auto">
       <Timeline data={data} />
     </div>
   );

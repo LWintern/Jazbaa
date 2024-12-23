@@ -16,7 +16,7 @@ import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jaz
 import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { WithVIP } from '@/components/customComponents/WithVIP/WithVip'
 import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
-import { ManBehindJazbaa } from '@/components/customComponents/ManBehindJazbaa'
+import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 export default function Home() {
   return (
    <>

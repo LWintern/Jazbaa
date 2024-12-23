@@ -86,9 +86,7 @@ const initiativesData = [
     return (
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
-        <div className="mb-8">
-          <p className="text-sm text-gray-500">Linux World Initiatives</p>
-        </div>
+      
         
         <div className="text-3xl pb-8 font-bold text-center ">
           Our <span className="text-[#ff0000]">Initiatives</span>
