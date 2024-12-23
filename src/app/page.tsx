@@ -34,9 +34,10 @@ export default function Home() {
     <JazbaaStats />
     <IndustryExpertSpeech />
     <Glimps />
+    <WithVIP />
   <h1>Taking jazbaa to national level</h1>
   {/* <h1>show photos with VIP</h1> */}
-  <WithVIP />
+ 
   <h1>Man Behind Jazbaa</h1>  
   {/* <h1>Jazbaa 1.0/2.0 (card with numbers)</h1> */}
   <Jazbaa></Jazbaa>
