@@ -11,6 +11,10 @@ const nextConfig = {
             {
               protocol: 'https',
               hostname: 'pbs.twimg.com',
+            },
+            {
+              protocol: 'https',
+              hostname: 'media.licdn.com',
             }
           ],
     }

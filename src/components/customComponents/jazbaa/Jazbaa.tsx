@@ -1,8 +1,12 @@
+"use client"
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@/components/ui/breadcrumb"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Jazbaa1 from "./Jazbaa1"
 import Jazbaa2 from "./Jazbaa2"
+import { useState } from "react"
+import { Button } from "@/components/ui/button"
 export default function Jazbaa() {
+  const [activeTab, setActiveTab] = useState<'Inclusivity' | 'Sustainability'>('Inclusivity')
   return (
     <div className="w-full max-w-6xl mx-auto px-4 space-y-2">
         <div>
@@ -24,13 +28,15 @@ export default function Jazbaa() {
             value="vip" 
             className="data-[state=active]:bg-transparent data-[state=active]:text-white text-gray-400 h-12"
           >
-            VIP Challenge
+            <Button onClick={() => setActiveTab('Inclusivity')}>Inclusivity</Button>
+            
           </TabsTrigger>
           <TabsTrigger 
             value="creator" 
             className="relative data-[state=active]:bg-transparent data-[state=active]:text-white text-gray-400 h-12"
           >
-            Creator Challenge
+            <Button onClick={() => setActiveTab('Sustainability')}>Sustainability</Button>
+            {/* Creator Challenge */}
             {/* Glow effect for active state */}
             <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent blur-xl data-[state=inactive]:opacity-0 transition-opacity" />
           </TabsTrigger>
@@ -44,8 +50,10 @@ export default function Jazbaa() {
       </Tabs>
       </div>
       <div>
-      <Jazbaa1 />
-      <Jazbaa2 />
+        {activeTab === 'Inclusivity' ? <Jazbaa1 /> : <Jazbaa2 />}
+        {/* {activeTab === 'Sustainability' && <Jazbaa2 />} */}
+      {/* <Jazbaa1 />
+      <Jazbaa2 /> */}
       </div>
     </div>
   )
