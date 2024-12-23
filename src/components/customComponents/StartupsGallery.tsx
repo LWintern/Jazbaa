@@ -141,7 +141,7 @@ export function StartupsGallery() {
                   height={150}
                   src={card.src} // Use the "before" image here
                   alt={card.title}
-                  className="h-40 w-40 rounded-lg object-cover object-top"
+                  className="h-32 w-32 rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="text-center">
