@@ -3,51 +3,54 @@
 import { Card } from "@/components/ui/card"
 import Image from "next/image"
 
-
 export default function Gallery() {
   return (
     <>
-<Card className="relative mx-auto overflow-hidden group/card transition-all duration-500 ease-out hover:bg-black bg-white h-[280px]">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent opacity-0 group-hover/card:opacity-100 transition-all duration-500 z-10" />
-      
-      <div className="flex items-center h-full p-12 relative z-20">
-        {/* Left side content */}
-        <div className="w-1/3 relative z-30">
-          <h1 className="text-5xl font-black leading-tight tracking-tight text-black group-hover/card:text-white transition-colors duration-500">
-            CREATE
-            <br />
-            BETTER
-            <br />
-            CONTENT
-          </h1>
-        </div>
+      <div className="relative p-4"> {/* Added wrapper div with padding */}
+        <Card className="relative mx-auto group/card transition-all duration-500 ease-out hover:bg-black bg-white h-[250px] max-w-6xl">
+          {/* Removed overflow-hidden from Card */}
+          
+          {/* Background gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent opacity-0 group-hover/card:opacity-100 transition-all duration-500 z-10" />
+          
+          <div className="flex items-center h-full p-12 relative z-20 ">
+            {/* Left side content */}
+            <div className="w-1/3 relative z-30">
+              <h1 className="text-3xl font-black leading-tight tracking-tight text-black group-hover/card:text-white transition-colors duration-500">
+                Create
+                <br />
+                Better
+                <br />
+                Content
+              </h1>
+            </div>
 
-        {/* Center image */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[280px] transform transition-all duration-500 ease-out opacity-0 group-hover/card:opacity-100 scale-90 group-hover/card:scale-100 z-20">
-          <div className="relative w-full h-full transform group-hover/card:rotate-6 transition-transform duration-500">
-            <Image
-              src="/assets/mentor-with-VIPS/techie1.png"
-              alt="Content Creator"
-              fill
-              className="object-cover z-50 object-center rounded-lg shadow-xl"
-              priority
-            />
+            {/* Center image - Moved outside the card's flow */}
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[250px] transform transition-all duration-500 ease-out opacity-0 group-hover/card:opacity-100 scale-90 group-hover/card:scale-100 z-50">
+              {/* Increased z-index to ensure image stays on top */}
+              <div className="relative w-full h-full transform group-hover/card:rotate-6 transition-transform duration-500">
+                <Image
+                  src="/assets/mentor-with-VIPS/techie1.png"
+                  alt="Content Creator"
+                  fill
+                  className="object-cover z-50 object-center rounded-lg shadow-xl"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Right side content */}
+            <div className="w-2/3 pl-8 relative z-1 transition-transform duration-500 ease-out transform group-hover/card:translate-x-28">
+              <p className="text-md leading-relaxed text-black group-hover/card:text-white transition-colors duration-500">
+                Understand Your Audience • Content Strategy • Storytelling • Copy 
+                writing • Editing • Shooting • Community Building • Influencer 
+                Collaboration • Podcasting Skills • Creativity Techniques • Self 
+                Branding
+              </p>
+            </div>
           </div>
-        </div>
-
-        {/* Right side content - Added transform and transition */}
-        <div className="w-2/3 pl-8 relative z-1 transition-transform duration-500 ease-out transform group-hover/card:translate-x-28">
-          <p className="text-lg leading-relaxed text-black group-hover/card:text-white transition-colors duration-500">
-            Understand Your Audience • Content Strategy • Storytelling • Copy 
-            writing • Editing • Shooting • Community Building • Influencer 
-            Collaboration • Podcasting Skills • Creativity Techniques • Self 
-            Branding
-          </p>
-        </div>
+        </Card>
       </div>
-    </Card>
     </>
   )
 }
-
