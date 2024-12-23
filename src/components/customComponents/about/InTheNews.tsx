@@ -42,20 +42,20 @@ const newsItems: NewsItem[] = [
 
 export default function InNews() {
   return (
-    <div className="bg-zinc-950 min-h-screen p-6 md:p-8 lg:p-12">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-zinc-950 py-12  p-6 md:p-8 lg:p-12">
+      <div className="max-w-6xl mx-auto">
         <div className="mb-8">
           <span className="inline-block text-zinc-500 text-sm font-medium mb-2">
             + PIONEERING EDUCATION
           </span>
-          <h2 className="text-white text-3xl md:text-4xl font-bold">
-            In the News
+          <h2 className="text-white text-2xl md:text-3xl font-bold">
+            In the <span className="text-[#ff0000]"> News</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
           {newsItems.map((item, index) => (
-            <Card key={index} className="bg-white hover:bg-zinc-50 transition-colors overflow-hidden">
+            <Card key={index} className="bg-white hover:bg-zinc-50 transition-colors mx-auto overflow-hidden w-[90%]">
               <CardHeader className="p-4 border-b-2 border-[#ff0000]">
                 <div className="font-semibold  text-zinc-800">
                   {item.source}
