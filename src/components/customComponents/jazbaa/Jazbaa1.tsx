@@ -3,8 +3,13 @@ import Image from "next/image";
 
 export default function Jazbaa1() {
   return (
+<<<<<<< HEAD
     <div className="bg-gray-200 text-black max-w-5xl rounded-xl mx-auto">
       <div className="container mx-auto md:px-8 px-0 py-12  ">
+=======
+    <div className="bg-black w-full text-white ">
+      <div className="container mx-auto md:px-4 px-0 py-12 max-w-6xl">
+>>>>>>> 326553a6fc0d925e46fbeb2528b392eacf98587a
         {/* Header */}
         <div className="mb-16">
           <div className="flex items-center gap-2 text-gray-400 mb-4">

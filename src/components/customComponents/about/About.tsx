@@ -56,6 +56,15 @@ export default function About() {
                   </div>
                 </div>
               </div>
+  <div className="min-h-full bg-black text-white p-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Main Heading */}
+        <div className="mb-12">
+          <h1 className="text-1xl md:text-3xl font-bold leading-tight">
+            About
+            <div className="relative">
+              Linux World
+              <div className="absolute -bottom-2 left-0 w-32 h-1 bg-cyan-400"></div>
             </div>
 
             {/* Right Column - Goal Card and Description */}
@@ -112,6 +121,30 @@ export default function About() {
             </div>
           </DialogContent>
         </Dialog>
+          </div>
+
+          {/* Right Column - Goal Card and Description */}
+          <div className="flex flex-col gap-8">
+            {/* Goal Card */}
+            <div className="flex justify-end">
+              <Card className="w-64 bg-zinc-900/30 border border-yellow-500/20 rounded-3xl backdrop-blur">
+                <CardContent className="p-6">
+                  <h2 className="text-2xl font-bold mb-2">
+                    Goal <span className="text-yellow-500">2024</span>
+                  </h2>
+                  <p className="text-gray-400">
+                    Reach Global Top 10 Ranking
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Description */}
+            <p className="text-md text-gray-300">
+              At Masters' Union, we believe in <span className="text-white font-medium">learning business by doing business</span>. Through collaboration of industry experts and academic leaders, we aim to revolutionise business education with a tech-centric and industry-driven approach.
+            </p>
+          </div>
+        </div>
       </div>
       <VisionMission />
       <InNews />
