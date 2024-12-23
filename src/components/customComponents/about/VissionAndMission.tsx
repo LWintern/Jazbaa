@@ -33,57 +33,9 @@ export default function VisionMission() {
           </button>
         </div>
 
-<<<<<<< HEAD
         {/* Content */}
         <div className="mt-8">
           {activeTab === 'Present' ? (
-=======
-      {/* Content */}
-      <div className="mt-8">
-        {activeTab === 'Present' ? (
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
-            <div className="space-y-4">
-              <h2 className="text-3xl  leading-tight">
-              Transforming Engineers into the Tech-
-nology Creators by developing an entre-
-preneurial mindset and inculating tech-
-nical competencies to innovate and pro-
-duce 
-{' '}
-                <span className="">products accepted globally</span>
-              </h2>
-              <p className="text-gray-600 font-bold">"Why" Linux World Exists</p>
-            </div>
-            <div className="space-y-6">
-              <Image
-                src="/assets/event-gallery/event-gallery-1.jpg"
-                alt="Education Model"
-                width={500}
-                height={300}
-                className="rounded-lg w-full"
-              />
-              <div className="space-y-4">
-                <div className="flex items-start gap-2">
-                  <span className="text-xl font-light text-gray-400">+</span>
-                  <p className="text-gray-600">
-                    The age-old education model is built on memorization, conformity & indoctrination
-                  </p>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-xl font-light text-gray-400">+</span>
-                  <p className="text-gray-600">
-                  Transforming Engineers into the Tech-
-nology Creators by developing an entre-
-preneurial mindset and inculating tech-
-nical competencies to innovate and pro-
-duce products accepted globally
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        ) : (
->>>>>>> 326553a6fc0d925e46fbeb2528b392eacf98587a
             <div className="grid lg:grid-cols-2 gap-8 items-start">
               {/* Left side with images */}
               <div className="space-y-6">
