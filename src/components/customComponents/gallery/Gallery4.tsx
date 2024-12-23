@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Gallery4() {
   return (
     <div className="relative p-4 md:p-4">
-      <Card className="relative mx-auto group transition-all duration-500 ease-out hover:bg-[#BA75F4] bg-white h-auto max-w-6xl md:h-[200px]">
+      <Card className="relative mx-auto group transition-all duration-500 ease-out hover:bg-gray-500 bg-white h-auto max-w-6xl md:h-[200px]">
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 z-10" />
 

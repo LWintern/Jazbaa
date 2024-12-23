@@ -2,7 +2,8 @@ import { Play } from 'lucide-react'
 
 export default function Jazbaa3() {
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className='mx-auto max-w-5xl bg-gray-200 rounded-xl'>
+    <div className="container mx-auto px-4 py-12 ">
       {/* Header Section */}
       <div className="mb-8">
         <span className="text-sm font-medium text-muted-foreground tracking-wider">+ PROMOTING ENTREPRENEURSHIP</span>
@@ -96,6 +97,7 @@ export default function Jazbaa3() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

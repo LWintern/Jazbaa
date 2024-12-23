@@ -21,19 +21,19 @@ export default function Jazbaa() {
           </BreadcrumbItem>
         </Breadcrumb>
 
-        <h1 className="text-3xl sm:text-4xl font-bold mb-8">
+        <h1 className="text-2xl md:text-3xl font-bold mb-8">
           Explore Innovative Business Ideas
         </h1>
 
-        <Tabs defaultValue="creator" className="w-full">
+        <Tabs defaultValue="creator" className="max-w-5xl mx-auto">
           <TabsList className="w-full h-44 md:h-14 bg-black rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-1 gap-2">
            
-              <Button onClick={() => setActiveTab('Inclusivity')} className={activeTab === 'Inclusivity' ? 'text-[#ff0000]' : 'text-white'}>Inclusivity</Button>
+              <Button onClick={() => setActiveTab('Inclusivity')} className={activeTab === 'Inclusivity' ? 'text-[#ff0000] bg-gray-200 hover:bg-gray-200' : 'text-white'}>Inclusivity</Button>
           
            
-              <Button onClick={() => setActiveTab('Sustainability')} className={activeTab === 'Sustainability' ? 'text-[#ff0000]' : 'text-white'}>Sustainability</Button>
+              <Button onClick={() => setActiveTab('Sustainability')} className={activeTab === 'Sustainability' ? 'text-[#ff0000] bg-gray-200 hover:bg-gray-200' : 'text-white'}>Sustainability</Button>
               <div className="absolute inset-0 bg-gradient-to-b from-emerald-500/20 to-transparent blur-xl data-[state=inactive]:opacity-0 transition-opacity" />
-         <Button onClick={() => setActiveTab('Dropshipping Challenge')} className={activeTab === 'Dropshipping Challenge' ? 'text-[#ff0000]' : 'text-white'}>
+         <Button onClick={() => setActiveTab('Dropshipping Challenge')} className={activeTab === 'Dropshipping Challenge' ? 'text-[#ff0000] bg-gray-200 hover:bg-gray-200' : 'text-white'}>
             
               Dropshipping Challenge
               </Button>
