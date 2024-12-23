@@ -17,6 +17,7 @@ import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { WithVIP } from '@/components/customComponents/WithVIP/WithVip'
 import { StartupsGallery } from '@/components/customComponents/StartupsGallery'
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
+import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 export default function Home() {
   return (
    <>
@@ -44,7 +45,8 @@ export default function Home() {
   <h1>what is the box for jazbaa 3.0 (card with info graphics)</h1>
   <h1>50+ startup up to be  show in jazbaa 3.0 (card of every startup )</h1>
   
-  <h1>Insta frame photos</h1>
+  {/* <h1>Insta frame photos</h1> */}
+  <PreJazbaa></PreJazbaa>
   <GalleryIndex/>
   {/* <h1>Event Gallery</h1> */}
   {/* <h1>About Linux world</h1> */}
