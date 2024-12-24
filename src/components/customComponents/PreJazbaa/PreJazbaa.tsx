@@ -31,12 +31,13 @@ const PreJazbaa = () => {
   ];
 
   return (
-    <>
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
       {/* Step 2: Render the cards dynamically */}
-      <div className="max-w-6xl mx-auto py-12">
+      <div className="max-w-6xl mx-auto py-12 ">
         <div className="w-full p-4 mx-auto">
 
-        <h1 className="text-3xl pb-8 text-center font-bold ">Pre <span className="text-[#ff0000] ">Jazbaa</span> </h1>
+        <h1 className="text-3xl pb-8   text-center font-bold ">Pre <span className="text-[#ff0000] ">Jazbaa</span> </h1>
+        
         </div>
      
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -63,7 +64,7 @@ const PreJazbaa = () => {
         ))}
       </div>
       </div>
-    </>
+    </div>
   );
 };
 

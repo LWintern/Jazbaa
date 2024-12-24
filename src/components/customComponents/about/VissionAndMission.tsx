@@ -7,7 +7,7 @@ export default function VisionMission() {
   const [activeTab, setActiveTab] = useState<'Present' | 'Future'>('Present')
 
   return (
-    <div className={`max-w-full mx-auto p-6 ${activeTab==='Present' ? 'bg-gray-100' : 'bg-black'}`}>
+    <div className={`max-w-full mx-auto p-6 ${activeTab==='Present' ? 'bg-gradient-to-b from-red-50 via-gray-50 to-red-50' : 'bg-black'}`}>
       {/* Tab Toggle */}
       <div className='max-w-6xl mx-auto'>
         <div className="inline-flex rounded-full p-1 bg-gradient-to-r from-[#5CD4CC] via-[#FFD66B] to-[#FF9051]">

@@ -7,7 +7,7 @@ export function JazbaaTimeline() {
     {
       title: "Jazbaa 1.O",
       content: (
-        <div>
+        <div className="">
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Built and launched Startup from scratch
           </p>
@@ -47,7 +47,7 @@ export function JazbaaTimeline() {
     {
       title: "Jazbaa 2.O",
       content: (
-        <div>
+        <div className="">
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             I usually run out of copy, but when I see content this big, I try to
             integrate lorem ipsum.
@@ -148,8 +148,10 @@ export function JazbaaTimeline() {
     },
   ];
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
+    <div className="max-w-6xl mx-auto  ">
       <Timeline data={data} />
+    </div>
     </div>
   );
 }

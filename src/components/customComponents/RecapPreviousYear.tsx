@@ -46,7 +46,7 @@ const events: EventCard[] = [
 
 export default function RecapPreviousYear() {
   return (
-    <div className="">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-8">
       <div className="container mx-auto max-w-5xl px-4 py-12 space-y-8">
         {/* Main Video Section */}
         <div className="relative rounded-3xl overflow-hidden">

@@ -31,7 +31,7 @@ export function StartupsGallery() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
+    <div className="py-8 bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
       <h1 className="text-3xl font-bold text-center my-12">50+ STARTUPS TO BE SHOWCASED @ <span className="text-[#ff0000]">JABAA 3.0</span></h1>
       <AnimatePresence>
         {active && typeof active === "object" && (
@@ -74,8 +74,8 @@ export function StartupsGallery() {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
-                  width={150}
-                  height={150}
+                  width={120}
+                  height={120}
                   src={active.afterSrc} // Use the "after" image here
                   alt={active.title}
                   className="w-full h-80 lg:h-60 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -126,7 +126,7 @@ export function StartupsGallery() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -136,13 +136,13 @@ export function StartupsGallery() {
           >
             <div className="flex gap-4 flex-col items-center">
               <motion.div layoutId={`image-${card.title}-${id}`}>
-                <Image
-                  width={150}
-                  height={150}
-                  src={card.src} // Use the "before" image here
-                  alt={card.title}
-                  className="h-32 w-32 rounded-lg object-cover object-top"
-                />
+              <Image
+  width={100}
+  height={100}
+  src={card.src}
+  alt={card.title}
+  className="h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-lg object-cover object-top"
+/>
               </motion.div>
               <div className="text-center">
                 <motion.h3
@@ -168,7 +168,7 @@ export function StartupsGallery() {
           </motion.div>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

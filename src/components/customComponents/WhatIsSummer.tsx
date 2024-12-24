@@ -7,7 +7,7 @@ import { Play } from "lucide-react"
 
 export default function WhatIsSummer() {
   return (
-    <div className="bg-white relative overflow-hidden "> {/* Added min-height for reference */}
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 relative overflow-hidden "> {/* Added min-height for reference */}
       <div className="container mx-auto   py-12 max-w-6xl">
         <div className="grid lg:grid-cols-[1.8fr,2fr]  items-center  sm:ml-28">
           {/* Left Column - Video Section */}
@@ -20,7 +20,7 @@ export default function WhatIsSummer() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             ></iframe>
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-400/40 to-orange-300/40 pointer-events-none" />
+            <div className="absolute inset-0 " />
           </div>
 
           {/* Right Column - Content Section */}
@@ -83,7 +83,7 @@ export default function WhatIsSummer() {
       </div>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-1/4 h-full bg-gradient-to-r from-black to-transparent opacity-10" />
+      <div className="absolute top-0 left-0 w-1/4 h-full bg-gradient-to-r from-red-50 to-transparent opacity-10" />
     </div>
   );
 }

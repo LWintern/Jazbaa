@@ -29,6 +29,7 @@ export const ParallaxScroll = ({
   const thirdPart = images.slice(2 * third);
 
   return (
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
     <div className="max-w-6xl mx-auto px-4 py-12">
     {/* Added Title Section */}
     <div className="mb-12">
@@ -46,7 +47,7 @@ export const ParallaxScroll = ({
       ref={gridRef}
     >
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10  px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
@@ -92,6 +93,7 @@ export const ParallaxScroll = ({
           ))}
         </div>
       </div>
+    </div>
     </div>
     </div>
   );

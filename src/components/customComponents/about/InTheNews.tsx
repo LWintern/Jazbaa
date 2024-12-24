@@ -42,7 +42,7 @@ const newsItems: NewsItem[] = [
 
 export default function InNews() {
   return (
-    <div className="bg-gray-100 py-12  p-6 md:p-8 lg:p-12">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-12  p-6 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
          

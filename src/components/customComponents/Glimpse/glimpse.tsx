@@ -14,8 +14,8 @@ import Image from "next/image";
 
 export function Glimps() {
   return (
-    
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
+    <div className="max-w-6xl mx-auto px-4 py-12 ">
     {/* Added Title Section */}
     <div className="mb-12">
       <h1 className="text-2xl md:text-3xl font-bold leading-tight">
@@ -41,7 +41,7 @@ export function Glimps() {
       ))}
     </BentoGrid>
     </div>
-    
+    </div>    
   );
 }
 
@@ -222,6 +222,7 @@ const SkeletonFour = () => {
         </p>
       </motion.div>
     </motion.div>
+    
   );
 };
 const SkeletonFive = () => {

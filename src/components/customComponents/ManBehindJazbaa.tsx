@@ -107,7 +107,7 @@ const ManBehindJazbaa = () => {
 
   return (
     <div
-      className="bg-gradient-to-br from-gray-50 via-black-50 to-red-50"
+      className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-8"
       id="mentor"
     >
       <div ref={profileRef} className="max-w-6xl pt-12 mx-auto md:p-6 lg:px-8">

@@ -7,13 +7,13 @@ interface JazbaaCardProps {
     activeTab: String;
   }
   const JazbaaCard: React.FC<JazbaaCardProps> = ({ activeTab }) => {
-    if(activeTab==='Inclusivity'){
+    if(activeTab==='Learn'){
         return(
             <>
             <Jazbaa1></Jazbaa1>
             </>
         )
-    }else if(activeTab==='Sustainability'){
+    }else if(activeTab==='Build'){
         return(
             <>
                 <Jazbaa2></Jazbaa2>

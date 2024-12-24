@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function EventBanner() {
   return (
-    <div className="p-6">
+    <div className="p-6 bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
       <div className="relative overflow-hidden max-w-5xl mx-auto rounded-3xl bg-black">
         {/* Container for image and content */}
         <div className="flex flex-col md:flex-row items-center relative w-full md:h-[300px]">

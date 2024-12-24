@@ -11,6 +11,7 @@ export default function Jazbaa() {
   const [activeTab, setActiveTab] = useState<string>('Learn');
 
   return (
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-8">
     <div className={`w-full  mx-auto ${activeTab==="Present"?"bg-white":"bg-black"}bg-black px-4 sm:px-6 lg:px-8 space-y-6`}>
       <div className="max-w-6xl mx-auto">
         <Breadcrumb className="mb-6">
@@ -44,6 +45,7 @@ export default function Jazbaa() {
     
     <JazbaaCard activeTab={activeTab} />
    
+   </div>
    </div>
    </div>
    

@@ -203,7 +203,7 @@ export default function InvestersGrid() {
   const [showInvestors2025, setShowInvestors2025] = useState(false)
 
   return (
-    <div className="relative pb-20">
+    <div className="relative pb-20 bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         {/* 2023 Investors Section */}
         <div className="mb-20">

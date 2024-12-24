@@ -84,7 +84,8 @@ const initiativesData = [
   // Modified Component
   const InitiativesSection = () => {
     return (
-      <div className="max-w-6xl mx-auto px-4 py-8">
+      <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
+      <div className="max-w-6xl mx-auto px-4 py-8 ">
         {/* Header */}
       
         
@@ -155,6 +156,7 @@ const initiativesData = [
 
           ))}
         </div>
+      </div>
       </div>
     )
   }

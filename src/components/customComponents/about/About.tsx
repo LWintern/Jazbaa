@@ -23,8 +23,8 @@ export default function About() {
   const [videoOpen, setVideoOpen] = useState(false)
 
   return (
-    <>
-      <div className="min-h-full bg-gray-100 text-black p-4 sm:p-6">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-8">
+      <div className="min-h-full  text-black p-4 sm:p-6">
         <div className="max-w-6xl mx-auto">
           {/* Main Heading */}
           <div className="mb-8 sm:mb-12">
@@ -112,6 +112,6 @@ export default function About() {
       
       <VisionMission />
       <InNews />
-    </>
+    </div>
   )
 }

@@ -159,7 +159,7 @@ export default function IndustryExpertSpeech() {
   }, [])
 
   return (
-    <div className="bg-white py-16 px-4 md:px-8">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-16 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="mb-12">

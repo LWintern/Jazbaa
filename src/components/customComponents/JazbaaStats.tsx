@@ -44,7 +44,7 @@ const statsData = [
 
 const JazbaaStats = () => {
   return (
-    <div className="bg-gradient-to-b from-red-50 to-white">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50">
     <div className="max-w-6xl mx-auto px-4 py-16 ">
       {/* Heading */}
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
