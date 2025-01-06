@@ -7,7 +7,7 @@ export default function Jazbaa3() {
       {/* Header Section */}
       <div className="mb-8">
         <span className="text-sm font-medium text-muted-foreground tracking-wider">+ PROMOTING ENTREPRENEURSHIP</span>
-        <h1 className="text-4xl font-bold mt-4 mb-6">Masters' Union Innovation Lab</h1>
+        <h1 className="text-4xl font-bold mt-4 mb-6">Masters&apos; Union Innovation Lab</h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Navigate your startup journey with personalised advice and resources from industry experts, available on our unique platform.
         </p>

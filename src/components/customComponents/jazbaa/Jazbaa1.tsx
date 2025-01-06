@@ -27,7 +27,7 @@ export default function Jazbaa1() {
               <div className="space-y-4">
                 <h2 className="text-2xl md:text-4xl font-semibold">Inclusivity</h2>
                 <p className="text-gray-100 leading-relaxed text-base md:text-lg">
-                  At Masters' Union, we celebrate diversity with a strong representation of female
+                  At Masters&apos; Union, we celebrate diversity with a strong representation of female
                   students and employees. Inclusivity is at the heart of our community, and we create a
                   supportive and dynamic learning environment for everyone.
                 </p>

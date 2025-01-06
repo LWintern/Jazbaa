@@ -73,7 +73,7 @@ export default function VisionMission() {
                   <h2 className="text-2xl leading-tight">
                     Transforming Engineers into the Technology Creators by developing an entrepreneurial mindset and inculating technical competencies to innovate and produce products accepted globally
                   </h2>
-                  <p className="text-gray-600">"Why" Linux World Exists</p>
+                  <p className="text-gray-600">&quot;Why&quot; Linux World Exists</p>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-2">
@@ -128,9 +128,9 @@ export default function VisionMission() {
                 <div className="space-y-4">
                   <h2 className="text-2xl text-white leading-tight">
                     To build visionaries from Engineering Students and major contributions towards the technological growth of our nation. Soon Indians to be known as{' '}
-                    <span className="font-white">"Creators in the Technology Space"</span>
+                    <span className="font-white">`&quot;Creators in the Technology Space`&quot;</span>
                   </h2>
-                  <p className="text-white">"Why" Linux World Exists</p>
+                  <p className="text-white">&quot;Why&quot; Linux World Exists</p>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-2">

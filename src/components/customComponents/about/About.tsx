@@ -83,7 +83,7 @@ export default function About() {
 
               {/* Description */}
               <p className="text-sm sm:text-md text-black">
-                At Masters' Union, we believe in learning business by doing business. 
+                At Masters`&apos; Union, we believe in learning business by doing business. 
                 Through collaboration of industry experts and academic leaders, we aim 
                 to revolutionise business education with a tech-centric and 
                 industry-driven approach.

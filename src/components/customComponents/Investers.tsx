@@ -211,7 +211,7 @@ export default function InvestersGrid() {
             SUMMER PROGRAM 2023 INVESTORS
           </h1>
           <h2 className="text-2xl md:text-xl text-gray-500 text-center mb-12">
-            THE WORLD'S BIGGEST INVESTORS
+            THE WORLD`&apos;S BIGGEST INVESTORS
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-6">
             {investors2025.map((investor) => (
