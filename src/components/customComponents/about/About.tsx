@@ -111,7 +111,7 @@ export default function About() {
       </div>
       
       <VisionMission />
-      <InNews />
+      {/* <InNews /> */}
     </div>
   )
 }

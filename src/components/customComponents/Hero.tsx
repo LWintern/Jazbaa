@@ -19,7 +19,7 @@ export default function HeroSection() {
   const [wordIndex, setWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
-  const speed = 180; // Speed of typing/deleting
+  const speed = 180;
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -29,27 +29,23 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    let timeout: NodeJS.Timeout;
+    let timeout: string | number | NodeJS.Timeout | undefined;
     const currentWord = words[wordIndex];
 
     if (!isDeleting) {
-      // Typing animation
       if (displayedText.length < currentWord.length) {
         timeout = setTimeout(() => {
           setDisplayedText(currentWord.slice(0, displayedText.length + 1));
         }, speed);
       } else {
-        // Wait before deleting
         timeout = setTimeout(() => setIsDeleting(true), 1000);
       }
     } else {
-      // Deleting animation
       if (displayedText.length > 0) {
         timeout = setTimeout(() => {
           setDisplayedText(currentWord.slice(0, displayedText.length - 1));
         }, speed);
       } else {
-        // Move to next word
         setIsDeleting(false);
         setWordIndex((prev) => (prev + 1) % words.length);
       }
@@ -75,11 +71,7 @@ export default function HeroSection() {
                 alt={`Slide ${index + 1}`}
                 fill
                 priority
-                style={{
-                  objectFit: 'cover',
-                  objectPosition: 'center',
-                  filter: 'brightness(50%)',
-                }}
+                className="object-cover object-center brightness-50"
               />
             </div>
           ))}
@@ -89,10 +81,10 @@ export default function HeroSection() {
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-12 lg:px-8">
         <div className="text-center">
-          <h1 className="mb-2 text-6xl font-bold text-white md:text-6xl lg:text-8xl ">
+          <h1 className="mb-2 text-4xl md:text-6xl lg:text-8xl font-bold text-white">
             LEARN BUSINESS BY
           </h1>
-          <h2 className="text-6xl font-bold text-yellow-400 md:text-7xl lg:text-8xl flex justify-center">
+          <h2 className="text-3xl md:text-6xl lg:text-8xl font-bold text-yellow-400 flex justify-center">
             DOING &nbsp;
             <motion.span
               className="inline-block"
@@ -107,10 +99,10 @@ export default function HeroSection() {
           </h2>
 
           {/* Register Now Button */}
-          <div className="mt-8 flex justify-center items-center">
+          <div className="mt-6 md:mt-8 flex justify-center">
             <Button
               variant="outline"
-              className="group flex font-bold tracking-tight items-center gap-2 bg-transparent text-white hover:bg-black/50 rounded-full px-8 py-4 text-xl border-2 border-teal-400"
+              className="group flex font-bold tracking-tight items-center gap-2 bg-transparent text-white hover:bg-black/50 rounded-full px-6 md:px-8 py-3 md:py-4 text-lg md:text-xl border-2 border-teal-400"
             >
               REGISTER NOW
             </Button>
@@ -118,18 +110,18 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Buttons and Logos */}
-        <div className="absolute bottom-24 left-4 right-0 flex justify-between px-6">
-          <div className="flex gap-4">
+        <div className="absolute bottom-12 left-4 right-4 flex flex-col md:flex-row justify-between px-4 md:px-6 gap-4 md:gap-0">
+          <div className="flex flex-col md:flex-row gap-4">
             <Button
               variant="outline"
-              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50"
+              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50 text-sm md:text-base px-4 py-2"
             >
               <Youtube className="h-4 w-4" />
               YouTube
             </Button>
             <Button
               variant="outline"
-              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50"
+              className="group flex items-center gap-2 bg-black/30 text-white hover:bg-black/50 text-sm md:text-base px-4 py-2"
             >
               <Play className="h-4 w-4" />
               Watch The Intro Video
@@ -141,14 +133,14 @@ export default function HeroSection() {
             <Image
               src="/assets/hash13whitelogo.png"
               alt="hash13logo"
-              width={48}
-              height={48}
+              width={40}
+              height={40}
             />
             <Image
               src="/assets/LW-white.png"
               alt="AACSB Member"
-              width={48}
-              height={48}
+              width={40}
+              height={40}
             />
           </div>
         </div>
