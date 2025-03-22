@@ -433,7 +433,7 @@ export default function StartupsGallery() {
           display: flex;
           animation: scroll 15s linear infinite;
           white-space: nowrap;
-        }
+  
       `}</style>
     </div>
   );
