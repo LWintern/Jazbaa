@@ -337,6 +337,8 @@ export default function StartupsGallery() {
         <div className="flex gap-6 min-w-max animate-scroll">
 
           {/* Normal Cards (Stats & Images) */}
+
+
           {[...displayPairs, ...displayPairs].map((pair, index) => (
             <div key={index} className="flex flex-col items-center min-w-[250px]">
               
@@ -407,7 +409,7 @@ export default function StartupsGallery() {
               {/* Text Content Below */}
               <div className="px-2 text-white text-left">
                 <p className="text-sm leading-tight">
-                  "{testimonial?.content}"
+                &quot;{testimonial?.content}&quot;
                 </p>
                 <p className="text-md font-bold mt-2 text-white">- {testimonial?.name}</p>
               </div>
