@@ -298,128 +298,127 @@
 //     },
 //   },
 // ];
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import galleryData from './galleryData'; // Ensure it's correctly imported as an array
 
-const cards = [
-  {
-    type: "stat",
-    value: "300+",
-    description: "HOURS OF LIVE SESSIONS",
-    position: "top",
-    targetCard: "small",
-  },
-  {
-    type: "image",
-    title: "Bangalore",
-    image: "/api/placeholder/400/300",
-    height: "h-[250px]",
-  },
-  {
-    type: "stat",
-    value: "450+",
-    description: "EMPLOYEES",
-    position: "bottom",
-    targetCard: "large",
-  },
-  {
-    type: "image",
-    title: "Mumbai",
-    image: "/api/placeholder/400/320",
-    height: "h-[350px]",
-  },
-  {
-    type: "image",
-    title: "Tushar Sahu",
-    role: "Director Engineering, Google Cloud",
-    quote:
-      "Talking about building teams, I feel Futurense is playing a crucial role...",
-    image: "/api/placeholder/400/450",
-    height: "h-[400px]",
-    stat: {
-      value: "73+",
-      description: "CLIENT NPS SCORE",
-      position: "bottom",
-    },
-  },
-  {
-    type: "stat",
-    value: "60+",
-    description: "CLIENT PARTNERS",
-    position: "top",
-    targetCard: "small",
-  },
-  {
-    type: "image",
-    title: "Ayush Mehra",
-    before: "10 LPA",
-    after: "40 LPA",
-    quote: "Climbing the corporate ladder seemed impossible without upskilling...",
-    image: "/api/placeholder/400/450",
-    height: "h-[400px]",
-  },
-];
+export default function StartupsGallery() {
+  // Ensure galleryData is an array
+  if (!Array.isArray(galleryData)) {
+    console.error('galleryData is not an array:', galleryData);
+    return null;
+  }
 
-export default function FuturenseGallery() {
+  // Separate different types of cards
+  const topStats = galleryData.filter(card => card.type === 'stat' && card.position === 'top');
+  const images = galleryData.filter(card => card.type === 'image');
+  const bottomStats = galleryData.filter(card => card.type === 'stat' && card.position === 'bottom');
+  const testimonials = galleryData.filter(card => card.type === 'testimonial');
+
+  // Determine the minimum number of pairs to prevent overflow
+  const pairCount = Math.min(topStats.length, images.length, bottomStats.length);
+  
+  // Create pairs excluding testimonial cards
+  const displayPairs = [];
+  for (let i = 0; i < pairCount; i++) {
+    displayPairs.push({
+      topStat: topStats[i],
+      image: images[i],
+      bottomStat: bottomStats[i]
+    });
+  }
+
   return (
     <div className="py-12 px-6 bg-gradient-to-b from-purple-900 via-purple-950 to-purple-900 text-white overflow-hidden">
-      <div className="relative w-full">
-        <div className="flex space-x-2 animate-scroll"> 
-          {[...cards, ...cards].map((card, i) => (
-            <div key={i} className="flex flex-col items-center gap-2"> 
+      <div className="relative flex w-full overflow-hidden">
+        <div className="flex gap-6 min-w-max animate-scroll">
 
-              {/* Stat Cards (Top) */}
-              {card.type === "stat" && card.position === "top" && (
-                <div className="bg-black text-white px-6 py-3 rounded-lg text-center shadow-md w-[200px]">
-                  <h2 className="text-3xl font-bold">{card.value}</h2>
-                  <p className="text-sm text-gray-400">{card.description}</p>
+          {/* Normal Cards (Stats & Images) */}
+          {[...displayPairs, ...displayPairs].map((pair, index) => (
+            <div key={index} className="flex flex-col items-center min-w-[250px]">
+              
+              {/* Top Stat Card */}
+              <div className="bg-black rounded-xl shadow-lg p-4 mb-2 flex items-center gap-4 w-full text-center">
+                <div className={`w-8 h-8 rounded-full ${pair.topStat?.color === 'blue' ? 'bg-blue-600' : 'bg-yellow-400'} flex items-center justify-center`}>
+                  <span className="text-white font-bold">•</span>
                 </div>
-              )}
-
-              {/* Main Cards */}
-              {card.type === "image" && (
-                <div className={`bg-black rounded-xl overflow-hidden shadow-lg p-4 flex-shrink-0 w-[280px] ${card.height}`}>
-                  {card.image && (
-                    <div className="relative h-48">
-                      <Image src={card.image} alt={card.title} layout="fill" objectFit="cover" />
-                    </div>
-                  )}
-
-                  <h2 className="text-xl font-bold mt-3">{card.title}</h2>
-                  {card.role && <p className="text-sm text-gray-400">{card.role}</p>}
-                  {card.before && card.after && (
-                    <div className="flex items-center gap-2 my-2 text-xl">
-                      <p>{card.before}</p>
-                      <span className="text-gray-400">→</span>
-                      <p>{card.after}</p>
-                    </div>
-                  )}
-                  {card.quote && <p className="text-sm italic mt-2">{`"${card.quote}"`}</p>}
-
-                  {/* Stat Cards (Bottom) */}
-                  {card.stat && card.stat.position === "bottom" && (
-                    <div className="bg-black text-white px-6 py-3 rounded-lg text-center mt-3 shadow-md w-[200px]">
-                      <h2 className="text-3xl font-bold">{card.stat.value}</h2>
-                      <p className="text-sm text-gray-400">{card.stat.description}</p>
-                    </div>
+                <div>
+                  <h2 className="text-2xl font-bold">{pair.topStat?.value}</h2>
+                  <p className="text-xs text-gray-400">{pair.topStat?.description}</p>
+                </div>
+              </div>
+              
+              {/* Image Card */}
+              <div className="bg-black rounded-xl overflow-hidden shadow-lg w-full">
+                <div className="relative h-48">
+                  {pair.image?.image && (
+                    <Image
+                      src={pair.image?.image}
+                      alt={pair.image.title || 'Startup Image'}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                    />
                   )}
                 </div>
-              )}
-
-              {/* Stat Cards (Bottom - for independent stats) */}
-              {card.type === "stat" && card.position === "bottom" && (
-                <div className="bg-black text-white px-6 py-3 rounded-lg text-center shadow-md w-[200px]">
-                  <h2 className="text-3xl font-bold">{card.value}</h2>
-                  <p className="text-sm text-gray-400">{card.description}</p>
+                <div className="p-4">
+                  <h2 className="text-2xl font-bold">{pair.image?.title}</h2>
                 </div>
-              )}
+              </div>
+              
+              {/* Bottom Stat Card */}
+              <div className="bg-black rounded-xl shadow-lg p-4 mt-2 flex items-center gap-4 w-full text-center">
+                <div className={`w-8 h-8 rounded-full ${pair.bottomStat?.color === 'blue' ? 'bg-blue-600' : 'bg-yellow-400'} flex items-center justify-center`}>
+                  <span className="text-white font-bold">•</span>
+                </div>
+                <div>
+                  <h2 className="text-2xl font-bold">{pair.bottomStat?.value}</h2>
+                  <p className="text-xs text-gray-400">{pair.bottomStat?.description}</p>
+                </div>
+              </div>
+
             </div>
+          ))}
+
+          {/* 🔽 Separate Testimonial Cards - Moving in Carousel 🔽 */}
+          {[...testimonials, ...testimonials].map((testimonial, index) => (
+            <div 
+            key={index} 
+            className="flex flex-col items-center min-w-[250px] w-[250px] transition-transform"
+            style={{ transform: `translateY(${(index % 3) * 20}px)` }} // Uneven height effect
+          >
+            <div className="bg-black rounded-xl shadow-lg p-4 w-full text-center flex flex-col overflow-hidden">
+              
+              {/* Image at the Top */}
+              {testimonial.image && (
+                <div className="relative w-full h-48 mb-4 rounded-lg ">
+                  <Image
+                    src={testimonial.image}
+                    alt={testimonial.title || 'Testimonial Image'}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
+              
+              {/* Text Content Below */}
+              <div className="px-2 text-white text-left">
+                <p className="text-sm leading-tight">
+                  "{testimonial?.content}"
+                </p>
+                <p className="text-md font-bold mt-2 text-white">- {testimonial?.name}</p>
+              </div>
+            </div>
+          </div>
+          
+          
           ))}
         </div>
       </div>
 
+      {/* Style Block (Now Properly Placed) */}
       <style jsx>{`
         @keyframes scroll {
           from {
@@ -429,10 +428,11 @@ export default function FuturenseGallery() {
             transform: translateX(-50%);
           }
         }
+
         .animate-scroll {
           display: flex;
-          width: max-content;
-          animation: scroll 20s linear infinite;
+          animation: scroll 15s linear infinite;
+          white-space: nowrap;
         }
       `}</style>
     </div>

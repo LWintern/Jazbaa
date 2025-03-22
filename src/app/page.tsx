@@ -15,7 +15,7 @@ import IndustryExpertSpeech from '@/components/customComponents/IndustryExpertSp
 import { JazbaaTimeline } from '@/components/customComponents/JazbaaTimeLine/jazbaaTimeLine'
 import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { JazbaaGallery} from '@/components/customComponents/WithVIP/WithVip'
-import StartupsGallery from "@/components/customComponents/StartupsGallery";
+import Startup from "@/components/customComponents/startup/StartupsGallery";
 
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
@@ -27,7 +27,7 @@ export default function Home() {
 
   <Navbar />
   <Hero />
-  <StartupsGallery />
+  <Startup />
   <News/>
   <ManBehindJazbaa />
   {/* <ThreeDCardDemo /> */}
