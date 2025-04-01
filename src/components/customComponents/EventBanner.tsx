@@ -1,3 +1,66 @@
+// import React from 'react';
+
+// export default function AdaptationBanner() {
+//   return (
+//     <div className="flex items-center justify-center p-6 bg-black">
+//       <div className="flex items-center max-w-5xl w-full space-x-8">
+//         {/* Text Section */}
+//         <div className="w-1/2 pr-8">
+//           <p className="text-5xl font-bold text-white leading-tight">
+//             Embrace change early, and you
+//             <br />
+//             become the architect of the new
+//             <br />
+//             world, not just a resident of it.
+//           </p>
+//           <p className="text-4xl font-bold text-white mt-4 relative">
+//             Your time to 
+//             <span className="text-red-500 ml-2">adapt is NOW</span>
+//             <span className="absolute -bottom-2 left-0 w-32 border-b-4 border-red-500"></span>
+//           </p>
+//         </div>
+
+//         {/* Graph Section */}
+//         <div className="w-1/2">
+//           <svg viewBox="0 0 600 400" className="w-full">
+//             <text x="50" y="50" fill="white" fontSize="20" fontWeight="bold">Adoption Curve</text>
+            
+//             {/* Curve */}
+//             <path 
+//               d="M100,300 Q300,100 500,300" 
+//               fill="none" 
+//               stroke="white" 
+//               strokeWidth="3"
+//             />
+
+//             {/* Color Bands */}
+//             <rect x="100" y="280" width="80" height="20" fill="#5CFF5C" />
+//             <rect x="180" y="280" width="120" height="20" fill="#13C6F3" />
+//             <rect x="300" y="280" width="120" height="20" fill="#FFFF5C" />
+//             <rect x="420" y="280" width="120" height="20" fill="#FF5C5C" />
+//             <rect x="540" y="280" width="60" height="20" fill="#9C27B0" />
+
+//             {/* Percentage Labels */}
+//             <text x="140" y="295" fill="black" fontSize="12" textAnchor="middle">2.5%</text>
+//             <text x="240" y="295" fill="black" fontSize="12" textAnchor="middle">13.5%</text>
+//             <text x="360" y="295" fill="black" fontSize="12" textAnchor="middle">34%</text>
+//             <text x="480" y="295" fill="black" fontSize="12" textAnchor="middle">34%</text>
+//             <text x="570" y="295" fill="black" fontSize="12" textAnchor="middle">16%</text>
+
+//             {/* Labels */}
+//             <text x="110" y="330" fill="white" fontSize="12">Innovators</text>
+//             <text x="220" y="330" fill="white" fontSize="12">Early Adopters</text>
+//             <text x="340" y="330" fill="white" fontSize="12">Early Majority</text>
+//             <text x="460" y="330" fill="white" fontSize="12">Late Majority</text>
+//             <text x="540" y="330" fill="white" fontSize="12">Skeptics</text>
+//           </svg>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 

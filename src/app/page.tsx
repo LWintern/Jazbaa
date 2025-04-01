@@ -17,6 +17,8 @@ import { Glimps } from '@/components/customComponents/Glimpse/glimpse'
 import { JazbaaGallery} from '@/components/customComponents/WithVIP/WithVip'
 import Startup from "@/components/customComponents/startup/StartupsGallery";
 
+import Future from "@/components/customComponents/Future/future";
+
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 import News from '@/components/customComponents/News/news'
@@ -29,8 +31,9 @@ export default function Home() {
   <Hero />
   <Startup />
   <News/>
+  <Future />
   <ManBehindJazbaa />
-  {/* <ThreeDCardDemo /> */}
+  {/* <ThreeCardDemo /> */}
     <WhatIsSummer />
     <InvestersGrid />
     <EventBanner />

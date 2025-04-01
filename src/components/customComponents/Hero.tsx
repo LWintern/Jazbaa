@@ -84,7 +84,7 @@ export default function HeroSection() {
           <h1 className="mb-2 text-4xl md:text-6xl lg:text-8xl font-bold text-white">
             LEARN BUSINESS BY
           </h1>
-          <h2 className="text-3xl md:text-6xl lg:text-8xl font-bold text-yellow-400 flex justify-center">
+          <h2 className="text-3xl md:text-6xl lg:text-8xl font-bold text-[#ff0000] flex justify-center">
             DOING &nbsp;
             <motion.span
               className="inline-block"

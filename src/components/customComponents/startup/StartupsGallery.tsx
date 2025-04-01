@@ -341,8 +341,8 @@ export default function StartupsGallery() {
   }
 
   return (
-    <div className="py-12 px-6 bg-gradient-to-b from-purple-900 via-purple-950 to-purple-900 text-white overflow-hidden">
-      <h1 className="text-4xl font-bold text-center mb-8">50+ STARTUPS TO BE SHOWCASED @ JAZBAA</h1>
+    <div className="py-12 px-6 bg-white text-black overflow-hidden">
+      <h1 className="text-4xl text-black font-bold text-center mb-8">50+ STARTUPS TO BE SHOWCASED @ JAZBAA</h1>
       <div className="relative flex w-full overflow-hidden">
         <div className="flex gap-6 min-w-max animate-scroll">
 

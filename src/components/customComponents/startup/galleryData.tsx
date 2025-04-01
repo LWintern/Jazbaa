@@ -2,8 +2,8 @@ const galleryData = [
     {
       type: "stat",
       position: "top",
-      value: "80 LPA",
-      description: "HIGHEST CTC",
+      value: "80 +",
+      description: "STARTUP",
       color: "blue",
     },
     {
@@ -23,7 +23,7 @@ const galleryData = [
       type: "stat",
       position: "bottom",
       value: "73+",
-      description: "CLIENT NPS SCORE",
+      description: "LEARNERS",
       color: "yellow",
     },
    
@@ -31,7 +31,7 @@ const galleryData = [
       type: "stat",
       position: "bottom",
       value: "73+",
-      description: "CLIENT NPS SCORE",
+      description: "STARTUP",
       color: "yellow",
     },
     {
@@ -45,8 +45,8 @@ const galleryData = [
     {
       type: "stat",
       position: "top",
-      value: "80 LPA",
-      description: "HIGHEST CTC",
+      value: "80 +",
+      description: "STARTUP",
       color: "blue",
     },
     {
