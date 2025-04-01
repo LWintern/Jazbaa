@@ -147,7 +147,7 @@ export default function TestimonialSection(): JSX.Element {
                     {renderStars(testimonial.rating)}
                   </div>
                   
-                  <p className="text-gray-300 mb-6 text-xl italic">"{testimonial.text}"</p>
+                  <p className="text-gray-300 mb-6 text-xl italic">{testimonial.text}</p>
                   
                   <div className="flex items-center">
                     <Image 
