@@ -22,12 +22,18 @@ import Stats from "@/components/customComponents/stats";
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 import News from '@/components/customComponents/News/news'
+import { TeamGrid } from '@/components/customComponents/figma/TakingJazbaaToNextLevel'
+import TransformationStories from '@/components/customComponents/figma/TransformationStories'
+
+
 
 export default function Home() {
   return (
    <>
 
   <Navbar />
+  {/* <TeamGrid /> */}
+  {/* <TransformationStories /> */}
   <Hero />
   <Startup />
   <Stats />
