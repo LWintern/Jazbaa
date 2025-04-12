@@ -18,7 +18,7 @@ import { JazbaaGallery} from '@/components/customComponents/WithVIP/WithVip'
 import Startup from "@/components/customComponents/startup/StartupsGallery";
 
 import Future from "@/components/customComponents/Future/future";
-
+import Stats from "@/components/customComponents/stats";
 import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 import News from '@/components/customComponents/News/news'
@@ -30,6 +30,7 @@ export default function Home() {
   <Navbar />
   <Hero />
   <Startup />
+  <Stats />
   <News/>
   <Future />
   <ManBehindJazbaa />
