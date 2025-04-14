@@ -26,6 +26,7 @@ import { TeamGrid } from '@/components/customComponents/figma/TakingJazbaaToNext
 import TransformationStories from '@/components/customComponents/figma/TransformationStories'
 import ProcessFlow from '@/components/customComponents/figma/ProcessFlow'
 import JazbaaVersions from '@/components/customComponents/figma/JazbaaVersions'
+import AboutLinuxWorld from '@/components/customComponents/figma/AboutLinuxWorld'
 
 
 
@@ -37,6 +38,7 @@ export default function Home() {
   {/* <TeamGrid /> */}
   {/* <TransformationStories /> */}
   {/* <ProcessFlow/> */}
+  <AboutLinuxWorld ></AboutLinuxWorld>
   <JazbaaVersions />
   <Hero />
   <Startup />
