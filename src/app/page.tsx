@@ -25,6 +25,7 @@ import News from '@/components/customComponents/News/news'
 import { TeamGrid } from '@/components/customComponents/figma/TakingJazbaaToNextLevel'
 import TransformationStories from '@/components/customComponents/figma/TransformationStories'
 import ProcessFlow from '@/components/customComponents/figma/ProcessFlow'
+import JazbaaVersions from '@/components/customComponents/figma/JazbaaVersions'
 
 
 
@@ -36,6 +37,7 @@ export default function Home() {
   {/* <TeamGrid /> */}
   {/* <TransformationStories /> */}
   {/* <ProcessFlow/> */}
+  <JazbaaVersions />
   <Hero />
   <Startup />
   <Stats />

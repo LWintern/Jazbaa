@@ -101,4 +101,14 @@
     .story-content {
       @apply absolute bottom-0 left-0 right-0 p-6 bg-white transform transition-transform duration-300;
     }
-  }
+
+    
+      .investor-card {
+        @apply bg-white rounded-lg shadow-sm border border-gray-200;
+      }
+      
+      .version-number {
+        @apply text-red-600 font-bold text-4xl leading-none;
+      }
+    }
+  
