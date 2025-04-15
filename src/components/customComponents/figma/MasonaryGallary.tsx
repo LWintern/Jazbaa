@@ -1,7 +1,7 @@
 "use client"
 // components/MasonryGallery.tsx
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { motion } from 'framer-motion';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
@@ -104,7 +104,7 @@ const MasonryGallery: React.FC = () => {
               <Image
                 src={image.url}
                 alt={image.title || `Gallery image ${image.id}`}
-                fill
+                
                 className="object-cover bg-red-100 transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={index < 4} // Load first 4 images immediately

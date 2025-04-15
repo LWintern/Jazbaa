@@ -7,7 +7,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Mail, Laptop, Code, Lightbulb, PresentationIcon } from "lucide-react"
@@ -234,7 +234,7 @@ const CenterDetailsCard = ({ details }: { details: CenterDetails }) => (
           <Image
             src={details.image}
             alt={details.name}
-            fill
+            
             className="object-cover"
           />
         </div>

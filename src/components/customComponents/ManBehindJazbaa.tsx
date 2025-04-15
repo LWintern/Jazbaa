@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import React, { useEffect, useState, useRef } from "react";
 import { Youtube, Instagram, Linkedin } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";

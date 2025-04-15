@@ -2,7 +2,7 @@
 import hash13 from "../../../public/assets/logohash13.svg";
 import lwlogo from "../../../public/assets/LW-white.png";
 import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Footer from "./Footer";
 
 export default function Footer2() {

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { Button } from '@/components/ui/button';
 import { testimonialData, logoData } from './testimonialData';
 import { ChevronLeft, ChevronRight } from 'lucide-react';

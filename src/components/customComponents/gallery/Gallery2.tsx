@@ -5,7 +5,7 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Gallery2() {
   return (

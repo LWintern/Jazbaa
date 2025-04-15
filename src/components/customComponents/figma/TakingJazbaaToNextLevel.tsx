@@ -1,6 +1,6 @@
 // components/team-grid.tsx
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 interface TeamMember {
   id: string;

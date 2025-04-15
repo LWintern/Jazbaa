@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 
 interface NewsItem {

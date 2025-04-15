@@ -301,7 +301,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import galleryData from './galleryData'; // Ensure it's correctly imported as an array
 
 export default function StartupsGallery() {

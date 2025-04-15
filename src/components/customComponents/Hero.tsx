@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Instagram, Youtube, Play } from 'lucide-react'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import { motion } from "framer-motion";
 
 const images = [
