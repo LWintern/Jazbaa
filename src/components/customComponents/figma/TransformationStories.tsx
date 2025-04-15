@@ -34,7 +34,7 @@ const stories: StoryCard[] = [
 const TransformationStories: React.FC = () => {
   return (
     <div className="w-full min-h-screen bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-gray-800 text-3xl font-bold mb-4">Transformation stories</h1>
         <p className="text-gray-600 mb-8">Discover how our investors are making a difference</p>
         
