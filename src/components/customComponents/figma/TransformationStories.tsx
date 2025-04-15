@@ -1,107 +1,151 @@
-// ImageGallery.tsx
-import React from 'react';
-import { Card } from '@/components/ui/card';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+// components/TransformationStories.tsx
+"use client"
 
-interface StoryCard {
-  id: number;
-  imageUrl: string;
-  title: string;
-  description: string;
+import { useState, useEffect } from 'react'
+import Image from 'next/legacy/image'
+import { Card, CardContent } from "@/components/ui/card"
+import { ChevronDown } from 'lucide-react'
+
+interface StoryContent {
+  title: string
+  description: string
+  imageUrl: string
 }
 
-const stories: StoryCard[] = [
+interface CardConfig {
+  id: number
+  position: 'top' | 'middle' | 'bottom'
+  contents: StoryContent[]
+}
+
+// Define content for each card position
+const cardConfigs: CardConfig[] = [
   {
     id: 1,
-    imageUrl: '/images/investor1.jpg',
-    title: 'Top-Notch angel investors',
-    description: 'Top-Notch angel investors from various cities namely mumbai, banglore, hyderabad and grugram were present at jazbaa 1.0&2.0'
+    position: 'bottom',
+    contents: [
+      {
+        title: "Top - Notch angel investors",
+        description: "Top - Notch angel investors from various cities namely mumbai, banglore, hyderabadand grugram were present at jazbaa 1.0&2.0",
+        imageUrl: "/card1-image1.jpg"
+      },
+      {
+        title: "Another Story",
+        description: "Different description for card 1",
+        imageUrl: "/card1-image2.jpg"
+      },
+      // Add more content items for card 1
+    ]
   },
   {
     id: 2,
-    imageUrl: '/images/investor2.jpg',
-    title: 'Top-Notch angel investors',
-    description: 'Top-Notch angel investors from various cities namely mumbai, banglore, hyderabad and grugram were present at jazbaa 1.0&2.0'
+    position: 'middle',
+    contents: [
+      {
+        title: "Top - Notch angel investors",
+        description: "Top - Notch angel investors from various cities namely mumbai, banglore, hyderabadand grugram were present at jazbaa 1.0&2.0",
+        imageUrl: "/card2-image1.jpg"
+      },
+      {
+        title: "- Notch angel investors",
+        description: "Top - Notch angel investors from various cities namely mumbai, banglore, hyderabadand grugram were present at jazbaa 1.0&2.0",
+        imageUrl: "/card2-image1.jpg"
+      },
+      // Add more content items for card 2
+    ]
   },
   {
     id: 3,
-    imageUrl: '/images/investor3.jpg',
-    title: 'Top-Notch angel investors',
-    description: 'Top-Notch angel investors from various cities namely mumbai, banglore, hyderabad and grugram were present at jazbaa 1.0&2.0'
-  },
-];
+    position: 'bottom',
+    contents: [
+      {
+        title: "Top - Notch angel investors",
+        description: "Top - Notch angel investors from various cities namely mumbai, banglore, hyderabadand grugram were present at jazbaa 1.0&2.0",
+        imageUrl: "/card3-image1.jpg"
+      },
+      {
+        title: "Final Story",
+        description: "Different description for card 3",
+        imageUrl: "/card3-image2.jpg"
+      },
+      // Add more content items for card 3
+    ]
+  }
+]
 
-const TransformationStories: React.FC = () => {
+const StoryCard = ({ 
+  config,
+  className 
+}: { 
+  config: CardConfig
+  className?: string
+}) => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    if (config.contents.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % config.contents.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [config.contents.length])
+
+  const content = config.contents[currentIndex]
+
   return (
-    <div className="w-full min-h-screen bg-gray-50 p-6">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-gray-800 text-3xl font-bold mb-4">Transformation stories</h1>
-        <p className="text-gray-600 mb-8">Discover how our investors are making a difference</p>
+    <div className={`relative overflow-hidden ${className}`}>
+      <div className="flex flex-col">
+        {config.position === 'middle' && (
+          <div className="text-center p-4 bg-white h-[250px] flex flex-col justify-center">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{content.title}</h3>
+            <p className="text-sm text-gray-600">{content.description}</p>
+            <ChevronDown className="w-6 h-6 mx-auto mt-2  text-gray-600" />
+          </div>
+        )}
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stories.map((story) => (
-            <StoryCardComponent 
-              key={story.id} 
-              story={story} 
-              overlayPosition={story.id === 2 ? 'top' : 'bottom'}
-            />
+        <div className="relative h-[250px] w-full bg-red-100">
+          <Image
+            src={content.imageUrl}
+            alt={content.title}
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </div>
+
+        {(config.position === 'top' || config.position === 'bottom') && (
+          <div className="text-center p-4 bg-white h-[250px] flex flex-col justify-center">
+            <ChevronDown className="w-6 h-6 mx-auto mb-2 text-gray-600" />
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{content.title}</h3>
+            <p className="text-sm text-gray-600">{content.description}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
+export function TransformationStories() {
+  return (
+    <div className="w-full bg-white py-12">
+      <div className="container mx-auto px-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8">
+          Transformation stories
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 max-w-6xl mx-auto">
+          {cardConfigs.map((config) => (
+            <div 
+              key={config.id}
+              className="transform transition-all duration-500"
+            >
+              <StoryCard config={config} />
+            </div>
           ))}
         </div>
       </div>
     </div>
-  );
-};
-
-interface StoryCardComponentProps {
-  story: StoryCard;
-  overlayPosition: 'top' | 'bottom';
+  )
 }
-
-const StoryCardComponent: React.FC<StoryCardComponentProps> = ({ story, overlayPosition }) => {
-  const overlayStyles = {
-    top: {
-      initial: 'absolute top-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-6 transform -translate-y-full',
-      hover: 'group-hover:translate-y-0',
-      chevron: 'top-4',
-      chevronIcon: ChevronUp
-    },
-    bottom: {
-      initial: 'absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-6 transform translate-y-full',
-      hover: 'group-hover:translate-y-0',
-      chevron: 'bottom-4',
-      chevronIcon: ChevronDown
-    }
-  };
-
-  const styles = overlayStyles[overlayPosition];
-  const ChevronIcon = styles.chevronIcon;
-
-  return (
-    <Card className="bg-white rounded-xl overflow-hidden group hover:shadow-2xl transition-all duration-300 border border-gray-100">
-      <div className="relative">
-        {/* Image */}
-        <img
-          src={story.imageUrl}
-          alt={story.title}
-          className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-500"
-        />
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/10 group-hover:opacity-100 opacity-0 transition-opacity duration-300" />
-        
-        {/* Content Overlay */}
-        <div className={`${styles.initial} ${styles.hover} transition-transform duration-300 border-t border-gray-100`}>
-          <h3 className="text-gray-800 text-xl font-semibold mb-3">{story.title}</h3>
-          <p className="text-gray-600 text-sm leading-relaxed">{story.description}</p>
-        </div>
-
-        {/* Chevron Icon */}
-        <div className={`absolute ${styles.chevron} left-1/2 -translate-x-1/2 group-hover:opacity-0 transition-opacity duration-300`}>
-          <ChevronIcon className="w-6 h-6 text-gray-800 animate-bounce" />
-        </div>
-      </div>
-    </Card>
-  );
-};
-
-export default TransformationStories;

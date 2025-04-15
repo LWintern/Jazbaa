@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 import { Instagram, Youtube, Play } from 'lucide-react'
-import Image from "next/legacy/image"
+import Image from "next/image" // Changed this import
 import { motion } from "framer-motion";
 
 const images = [
@@ -71,7 +71,9 @@ export default function HeroSection() {
                 alt={`Slide ${index + 1}`}
                 fill
                 priority
+                sizes="100vw"
                 className="object-cover object-center brightness-50"
+                style={{ objectFit: 'cover' }}
               />
             </div>
           ))}

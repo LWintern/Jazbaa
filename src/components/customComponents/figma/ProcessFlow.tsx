@@ -1,9 +1,3 @@
-
-
-
-
-
-
 "use client"
 
 import { useState, useEffect } from "react"
@@ -67,7 +61,7 @@ const cardData: CardData[] = [
       name: "Linux World Training Center",
       address: "Tech Hub, Innovation Park, Sector 15, Bangalore - Karnataka - India",
       email: "training@linuxworld.com",
-      image: "/training-center.jpg",
+      image: "/images/training-center.jpg",
       description: "Specialized training in Linux system administration, cloud computing, and DevOps practices."
     }
   },
@@ -92,7 +86,7 @@ const cardData: CardData[] = [
       name: "Linux World Development Hub",
       address: "Innovation Tower, Tech Valley, Sector 21, Pune - Maharashtra - India",
       email: "devops@linuxworld.com",
-      image: "/dev-hub.jpg",
+      image: "/images/dev-hub.jpg",
       description: "Advanced DevOps training and implementation of CI/CD pipelines and container orchestration."
     }
   },
@@ -116,7 +110,7 @@ const cardData: CardData[] = [
       name: "Linux World Cloud Center",
       address: "Cloud Park, Digital Zone, Sector 63, Gurugram - Haryana - India",
       email: "cloud@linuxworld.com",
-      image: "/cloud-center.jpg",
+      image: "/images/cloud-center.jpg",
       description: "Comprehensive cloud infrastructure training and implementation using leading platforms."
     }
   }
@@ -177,6 +171,7 @@ const ProcessCard = ({
     </div>
   );
 };
+
 // CenterDetailsCard Component
 const CenterDetailsCard = ({ details }: { details: CenterDetails }) => (
   <Card className="bg-white rounded-xl overflow-hidden shadow-lg">
@@ -230,12 +225,14 @@ const CenterDetailsCard = ({ details }: { details: CenterDetails }) => (
           </div>
         </div>
 
-        <div className="relative h-[200px] sm:h-[240px] md:h-auto rounded-lg overflow-hidden mt-4 md:mt-0">
+        <div className="relative h-[200px] sm:h-[240px] md:h-[300px] rounded-lg overflow-hidden mt-4 md:mt-0">
           <Image
             src={details.image}
             alt={details.name}
-            
-            className="object-cover"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+            priority
           />
         </div>
       </div>
@@ -261,9 +258,7 @@ export default function CareerSchools() {
 
   return (
     <div className="relative w-full min-h-screen">
-      {/* Blue background div covering 80% height */}
       <div className="absolute top-0 left-0 w-full h-[80%] bg-blue-900">
-        {/* Background pattern */}
         <div className="absolute inset-0 opacity-10">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
             <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
@@ -278,9 +273,7 @@ export default function CareerSchools() {
         </div>
       </div>
 
-      {/* Content container */}
       <div className="relative z-10 w-full py-8 sm:py-12 px-4">
-        {/* Heading */}
         <div className="relative text-center mb-8 sm:mb-12">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
             Our Training Programs
@@ -290,9 +283,7 @@ export default function CareerSchools() {
           </p>
         </div>
 
-        {/* Cards with connecting lines */}
         <div className="relative max-w-5xl mx-auto mb-8 sm:mb-12 h-[400px] sm:h-[300px]">
-          {/* Connecting dashed lines - Only show on non-mobile */}
           {!isMobile && (
             <svg
               className="absolute top-0 left-0 w-full h-full z-0"
@@ -318,7 +309,6 @@ export default function CareerSchools() {
             </svg>
           )}
 
-          {/* Mobile vertical connecting lines */}
           {isMobile && (
             <svg
               className="absolute top-0 left-1/2 h-full w-[2px] z-0 -translate-x-1/2"
@@ -338,7 +328,6 @@ export default function CareerSchools() {
             </svg>
           )}
 
-          {/* Dots - Adjust for mobile */}
           {!isMobile ? (
             <>
               <div className="absolute top-[40%] left-[4%] w-3 h-3 sm:w-4 sm:h-4 bg-blue-200 rounded-full -translate-y-1/2 z-10"></div>
@@ -354,7 +343,6 @@ export default function CareerSchools() {
             </>
           )}
 
-          {/* Cards */}
           <div className="relative w-full h-full">
             {sortedCards.map((card, index) => (
               <ProcessCard
@@ -367,8 +355,7 @@ export default function CareerSchools() {
           </div>
         </div>
 
-        {/* Center Information Card */}
-        <div className="relative max-w-4xl  mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           <CenterDetailsCard details={sortedCards[activeCardIndex].centerDetails} />
         </div>
       </div>

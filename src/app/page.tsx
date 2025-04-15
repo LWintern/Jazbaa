@@ -23,11 +23,11 @@ import ManBehindJazbaa from '@/components/customComponents/ManBehindJazbaa'
 import PreJazbaa from '@/components/customComponents/PreJazbaa/PreJazbaa'
 import News from '@/components/customComponents/News/news'
 import { TeamGrid } from '@/components/customComponents/figma/TakingJazbaaToNextLevel'
-import TransformationStories from '@/components/customComponents/figma/TransformationStories'
+import { TransformationStories } from '@/components/customComponents/figma/TransformationStories'
 import ProcessFlow from '@/components/customComponents/figma/ProcessFlow'
 import JazbaaVersions from '@/components/customComponents/figma/JazbaaVersions'
 import AboutLinuxWorld from '@/components/customComponents/figma/AboutLinuxWorld'
-import MasonryGallery from '@/components/customComponents/figma/MasonaryGallary'
+// import MasonryGallery from '@/components/customComponents/figma/MasonaryGallary'
 
 
 
@@ -36,7 +36,7 @@ export default function Home() {
    <>
 
   <Navbar />
-  <MasonryGallery />
+  {/* <MasonryGallery /> */}
   <TeamGrid />
 
   <TransformationStories />

@@ -52,13 +52,15 @@ const TeamMemberCard = ({
       className
     )}
   >
-    <Image
-      src={imageUrl}
-      alt={`${name}'s profile`}
-      fill
-      className="object-cover"
-      priority={isMain}
-    />
+    <div className="relative w-full h-full">
+      <Image
+        src={imageUrl}
+        alt={`${name}'s profile`}
+        layout="fill"
+        objectFit="cover"
+        priority={isMain}
+      />
+    </div>
     
     {isMain && (
       <div className="absolute inset-0 bg-blue-500/20 z-[1]" />
