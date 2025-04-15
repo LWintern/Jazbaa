@@ -314,3 +314,28 @@
     display: none;
   }
 }
+
+
+
+
+
+/* InvestersSection css */
+/* Add this to your global.css or equivalent */
+.animate-carousel:hover {
+  animation-play-state: paused;
+}
+
+.animate-carousel {
+  width: fit-content;
+  display: flex;
+  animation: carousel 25s linear infinite;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
