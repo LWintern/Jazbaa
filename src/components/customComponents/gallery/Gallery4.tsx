@@ -28,7 +28,8 @@ export default function Gallery4() {
               <Image
                 src="/assets/mentor-with-VIPS/techie1.png"
                 alt="Content Creator"
-                fill
+                layout="fill"
+                objectFit="cover"
                 className="object-cover z-50 object-center rounded-lg shadow-xl"
                 priority
               />
@@ -41,7 +42,8 @@ export default function Gallery4() {
               <Image
                 src="/assets/mentor-with-VIPS/techie1.png"
                 alt="Content Creator"
-                fill
+                layout="fill"
+                objectFit="cover"
                 className="object-cover z-50 object-center rounded-lg shadow-xl"
                 priority
               />

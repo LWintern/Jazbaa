@@ -28,8 +28,9 @@ export default function Gallery3() {
               <Image
                 src="/assets/mentor-with-VIPS/techie1.png"
                 alt="Content Creator"
-                fill
-                className="object-cover z-50 object-center rounded-lg shadow-xl"
+                layout="fill"
+                objectFit="cover"
+                className=" z-50 object-center rounded-lg shadow-xl"
                 priority
               />
             </div>
@@ -41,7 +42,8 @@ export default function Gallery3() {
               <Image
                 src="/assets/mentor-with-VIPS/techie1.png"
                 alt="Content Creator"
-                fill
+                layout="fill"
+                objectFit="cover"
                 className="object-cover z-50 object-center rounded-lg shadow-xl"
                 priority
               />

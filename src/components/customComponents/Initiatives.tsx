@@ -111,7 +111,8 @@ const initiativesData = [
                   <Image
                     src={initiative.images.main}
                     alt={`${initiative.title} Main Image`}
-                    fill
+                    layout="fill"
+                objectFit="cover"
                     className="object-cover"
                   />
                 </div>
@@ -122,7 +123,8 @@ const initiativesData = [
                       <Image
                         src={img}
                         alt={`${initiative.title} Secondary Image ${imgIndex + 1}`}
-                        fill
+                        layout="fill"
+                objectFit="cover"
                         className="object-cover"
                       />
                     </div>

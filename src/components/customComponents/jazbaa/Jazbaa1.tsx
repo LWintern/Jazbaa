@@ -101,7 +101,8 @@ export default function Jazbaa1() {
               <Image
                 src="/assets/event-gallery/event-gallery-4.jpg"
                 alt="Diverse team members"
-                fill
+                layout="fill"
+                objectFit="cover"
                 className="object-cover rounded-3xl"
                 style={{ objectPosition: '50% 15%' }}
               />

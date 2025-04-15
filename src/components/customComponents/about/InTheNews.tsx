@@ -42,12 +42,11 @@ const newsItems: NewsItem[] = [
 
 export default function InNews() {
   return (
-    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-12  p-6 md:p-8 lg:p-12">
+    <div className="bg-gradient-to-b from-red-50 via-gray-50 to-red-50 py-12 p-6 md:p-8 lg:p-12">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
-         
           <h2 className="text-black text-2xl md:text-3xl font-bold">
-            In the <span className="text-[#ff0000]"> News</span>
+            In the <span className="text-[#ff0000]">News</span>
           </h2>
         </div>
 
@@ -55,7 +54,7 @@ export default function InNews() {
           {newsItems.map((item, index) => (
             <Card key={index} className="bg-gray-200 hover:bg-gray-200 transition-colors mx-auto overflow-hidden w-[90%]">
               <CardHeader className="p-4 border-b-2 border-[#ff0000]">
-                <div className="font-semibold  text-zinc-800">
+                <div className="font-semibold text-zinc-800">
                   {item.source}
                 </div>
               </CardHeader>
@@ -64,9 +63,9 @@ export default function InNews() {
                   <Image
                     src={item.imageUrl}
                     alt={item.alt}
-                    fill
+                    layout="fill"
+                    objectFit="cover"
                     className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </CardContent>
@@ -77,4 +76,3 @@ export default function InNews() {
     </div>
   )
 }
-

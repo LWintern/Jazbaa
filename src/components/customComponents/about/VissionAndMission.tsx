@@ -43,8 +43,9 @@ export default function VisionMission() {
                   <Image
                     src="/assets/event-gallery/event-gallery-1.jpg"
                     alt="Education Model"
-                    fill
-                    className="rounded-lg object-cover"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -52,16 +53,18 @@ export default function VisionMission() {
                     <Image
                       src="/assets/event-gallery/event-gallery-1.jpg"
                       alt="Additional Image 1"
-                      fill
-                      className="rounded-lg object-cover"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
                     />
                   </div>
                   <div className="relative h-[100px] md:h-[120px]">
                     <Image
                       src="/assets/event-gallery/event-gallery-1.jpg"
                       alt="Additional Image 2"
-                      fill
-                      className="rounded-lg object-cover"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
                     />
                   </div>
                 </div>
@@ -99,8 +102,9 @@ export default function VisionMission() {
                   <Image
                     src="/assets/event-gallery/event-gallery-2.jpg"
                     alt="Education Model"
-                    fill
-                    className="rounded-lg object-cover"
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-lg"
                   />
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -108,16 +112,18 @@ export default function VisionMission() {
                     <Image
                       src="/assets/event-gallery/event-gallery-2.jpg"
                       alt="Additional Image 1"
-                      fill
-                      className="rounded-lg object-cover"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
                     />
                   </div>
                   <div className="relative h-[100px] md:h-[120px]">
                     <Image
                       src="/assets/event-gallery/event-gallery-2.jpg"
                       alt="Additional Image 2"
-                      fill
-                      className="rounded-lg object-cover"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
                     />
                   </div>
                 </div>
