@@ -42,10 +42,11 @@ export default function Home() {
   <TransformationStories />
   <ProcessFlow/>
   <AboutLinuxWorld ></AboutLinuxWorld>
+  <Stats />
   <JazbaaVersions />
   {/* <Hero />
   <Startup />
-  <Stats />
+   
   <News/>
   <Future />
   <ManBehindJazbaa />
