@@ -35,19 +35,19 @@ export default function Home() {
    <>
 
   <Navbar />
-  {/* <TeamGrid /> */}
-  {/* <TransformationStories /> */}
-  {/* <ProcessFlow/> */}
+  <TeamGrid />
+  <TransformationStories />
+  <ProcessFlow/>
   <AboutLinuxWorld ></AboutLinuxWorld>
   <JazbaaVersions />
-  <Hero />
+  {/* <Hero />
   <Startup />
   <Stats />
   <News/>
   <Future />
   <ManBehindJazbaa />
   {/* <ThreeCardDemo /> */}
-    <WhatIsSummer />
+    {/* <WhatIsSummer />
     <InvestersGrid />
     <EventBanner />
     <RecapPreviousYear />
@@ -56,19 +56,19 @@ export default function Home() {
     <IndustryExpertSpeech />
     <Glimps />
 
-    <JazbaaGallery/>
-  
+    <JazbaaGallery/> */}
+   
   {/* <h1>Insta frame photos</h1> */}
-  <PreJazbaa></PreJazbaa>
+  {/* <PreJazbaa></PreJazbaa>
  
   <Jazbaa></Jazbaa>
   
-  <GalleryIndex/>
+  <GalleryIndex/> */}
   {/* <h1>Event Gallery</h1> */}
   {/* <h1>About Linux world</h1> */}
-  <About></About>
+  {/* <About></About>
   <JazbaaTimeline></JazbaaTimeline>
-  
+   */}
   
   
   
