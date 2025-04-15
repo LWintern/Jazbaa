@@ -27,6 +27,7 @@ import TransformationStories from '@/components/customComponents/figma/Transform
 import ProcessFlow from '@/components/customComponents/figma/ProcessFlow'
 import JazbaaVersions from '@/components/customComponents/figma/JazbaaVersions'
 import AboutLinuxWorld from '@/components/customComponents/figma/AboutLinuxWorld'
+import MasonryGallery from '@/components/customComponents/figma/MasonaryGallary'
 
 
 
@@ -35,7 +36,9 @@ export default function Home() {
    <>
 
   <Navbar />
+  <MasonryGallery />
   <TeamGrid />
+
   <TransformationStories />
   <ProcessFlow/>
   <AboutLinuxWorld ></AboutLinuxWorld>
