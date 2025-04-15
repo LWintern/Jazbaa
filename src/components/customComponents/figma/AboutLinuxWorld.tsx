@@ -112,20 +112,20 @@ export default function AIInnovationPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-10">
-            Building What's <span className="text-cyan-400">Next!</span>
+            Building What`&apos;`s <span className="text-cyan-400">Next!</span>
           </h1>
           
           <p className="text-lg max-w-4xl mx-auto">
-            AI isn't just advancing—it's <span className="italic">disrupting, evolving, and reshaping industries</span> at an unprecedented pace. Each innovation ripples outward, creating a massive AI-powered ocean <span className="italic">where you either learn to surf or risk being left behind</span>.
+            AI isn`&apos;`t just advancing—it`&apos;`s <span className="italic">disrupting, evolving, and reshaping industries</span> at an unprecedented pace. Each innovation ripples outward, creating a massive AI-powered ocean <span className="italic">where you either learn to surf or risk being left behind</span>.
           </p>
           
           <p className="text-lg mt-6 max-w-4xl mx-auto">
-            We don't wait, we anticipate shifts and <span className="italic">build talent for what's next</span>. The focus is on high-impact sectors, creating scalable talent pipelines and leveraging India's deep talent pool through flexible, industry-tailored models....
+            We don`&apos;`t wait, we anticipate shifts and <span className="italic">build talent for what`&apos;`s next</span>. The focus is on high-impact sectors, creating scalable talent pipelines and leveraging India`&apos;`s deep talent pool through flexible, industry-tailored models....
           </p>
         </div>
         
         <h2 className="text-2xl font-bold my-16 text-center">
-          While others adapt, we build what's next!
+          While others adapt, we build what`&apos;`s next!
         </h2>
         
         {/* Vision and Mission cards */}
@@ -146,7 +146,7 @@ export default function AIInnovationPage() {
               </p>
               
               <p>
-                From Aryabhata's legacy to today's AI revolution, India has always been a beacon of intellectual leadership. Now, we aim not just to adopt AI but to lead its evolution, leveraging our vast talent and ingenuity to drive world-changing breakthroughs.
+                From Aryabhata`&apos;`s legacy to today`&apos;`s AI revolution, India has always been a beacon of intellectual leadership. Now, we aim not just to adopt AI but to lead its evolution, leveraging our vast talent and ingenuity to drive world-changing breakthroughs.
               </p>
               
               <p>
@@ -171,7 +171,7 @@ export default function AIInnovationPage() {
               </p>
               
               <p>
-                From uncovering hidden talent to creating global AI pipelines, we ensure the next breakthroughs don't just come to India—they come from India. Together, we are shaping a future where India defines the rules of innovation and stands tall as a global AI powerhouse.
+                From uncovering hidden talent to creating global AI pipelines, we ensure the next breakthroughs don`&apos;`t just come to India—they come from India. Together, we are shaping a future where India defines the rules of innovation and stands tall as a global AI powerhouse.
               </p>
             </div>
           </div>
